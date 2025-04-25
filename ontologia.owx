@@ -1,0 +1,1470 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/jorge/ontologies/2025/3/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/jorge/ontologies/2025/3/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/jorge/ontologies/2025/3/untitled-ontology-6/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.org/net/cartCoord#</Import>
+    <Declaration>
+        <Class IRI="#Attraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttractionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cuisine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Day"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotelCategory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotelType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Month"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportationMean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cooking_style"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_day"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_month"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_year"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_categorized"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#located_in_City"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occurs_in_City"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occurs_in_date"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#type_of_attraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#type_of_event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#type_of_hotel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#type_of_transportation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#day_of_month"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andalusian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#April"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#August"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BeachHotel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BusinessHotel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cultural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CulturalEvent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#December"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DeluxeHotel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#February"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Garden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gastronomic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#January"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Japanese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#July"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#June"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#March"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#May"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mediterranean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mexican"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monument"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Musical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#November"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#October"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PublicCycle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RuralHotel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#September"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Taxi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tech"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TouristicHotel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trolley"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AttractionType"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Beach"/>
+            <NamedIndividual IRI="#Cultural"/>
+            <NamedIndividual IRI="#Garden"/>
+            <NamedIndividual IRI="#Monument"/>
+            <NamedIndividual IRI="#Museum"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Cuisine"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Andalusian"/>
+            <NamedIndividual IRI="#Italian"/>
+            <NamedIndividual IRI="#Japanese"/>
+            <NamedIndividual IRI="#Mediterranean"/>
+            <NamedIndividual IRI="#Mexican"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Month"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#April"/>
+            <NamedIndividual IRI="#August"/>
+            <NamedIndividual IRI="#December"/>
+            <NamedIndividual IRI="#February"/>
+            <NamedIndividual IRI="#January"/>
+            <NamedIndividual IRI="#July"/>
+            <NamedIndividual IRI="#June"/>
+            <NamedIndividual IRI="#March"/>
+            <NamedIndividual IRI="#May"/>
+            <NamedIndividual IRI="#November"/>
+            <NamedIndividual IRI="#October"/>
+            <NamedIndividual IRI="#September"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TransportationMean"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Bus"/>
+            <NamedIndividual IRI="#Metro"/>
+            <NamedIndividual IRI="#PublicCycle"/>
+            <NamedIndividual IRI="#Taxi"/>
+            <NamedIndividual IRI="#Trolley"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <ClassAssertion>
+        <Class IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Andalusian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#April"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#August"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#BeachHotel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportationMean"/>
+        <NamedIndividual IRI="#Bus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#BusinessHotel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#Cultural"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#CulturalEvent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#December"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#DeluxeHotel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#February"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#Garden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Gastronomic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Italian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#January"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Japanese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#July"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#June"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#March"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#May"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Mediterranean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportationMean"/>
+        <NamedIndividual IRI="#Metro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Mexican"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#Monument"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Musical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#November"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#October"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportationMean"/>
+        <NamedIndividual IRI="#PublicCycle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#RuralHotel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Month"/>
+        <NamedIndividual IRI="#September"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Sports"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportationMean"/>
+        <NamedIndividual IRI="#Taxi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Tech"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#TouristicHotel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportationMean"/>
+        <NamedIndividual IRI="#Trolley"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_month"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#located_in_City"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#occurs_in_City"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#rated"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#type_of_transportation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#has_day"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#has_month"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#has_year"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#is_categorized"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#located_in_City"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#occurs_in_City"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#occurs_in_date"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cooking_style"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_day"/>
+        <Class IRI="#Date"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_month"/>
+        <Class IRI="#Date"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_year"/>
+        <Class IRI="#Date"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_categorized"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#located_in_City"/>
+        <Class IRI="#Attraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#located_in_City"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#located_in_City"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#located_in_City"/>
+        <Class IRI="#Transport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#occurs_in_City"/>
+        <Class IRI="#Attraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#occurs_in_date"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rated"/>
+        <Class IRI="#Attraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rated"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rated"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#type_of_attraction"/>
+        <Class IRI="#Attraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#type_of_event"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#type_of_hotel"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#type_of_transportation"/>
+        <Class IRI="#Transport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Attraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
+        <Class IRI="http://purl.org/net/cartCoord#Point"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cooking_style"/>
+        <Class IRI="#Cuisine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_day"/>
+        <Class IRI="#Day"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_month"/>
+        <Class IRI="#Month"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_year"/>
+        <Class IRI="#Year"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_categorized"/>
+        <Class IRI="#HotelCategory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#located_in_City"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#occurs_in_City"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#occurs_in_date"/>
+        <Class IRI="#Date"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rated"/>
+        <Class IRI="#Rating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#type_of_attraction"/>
+        <Class IRI="#AttractionType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#type_of_event"/>
+        <Class IRI="#EventType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#type_of_hotel"/>
+        <Class IRI="#HotelType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#type_of_transportation"/>
+        <Class IRI="#TransportationMean"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Rating"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Price"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Score"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Price"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#Score"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#day_of_month"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Price"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Price"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Price"/>
+        <Class IRI="#Transport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Score"/>
+        <Class IRI="#Attraction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Score"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Score"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Price"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Score"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#day_of_month"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/cartCoord#Point</IRI>
+        <Literal xml:lang="es">Representación de un punto geográfico en la forma latitud, longitud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/net/cartCoord#Point</IRI>
+        <Literal>point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/cartCoord#Point_List</IRI>
+        <Literal xml:lang="es">Representa una lista de puntos geográficos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/net/cartCoord#Point_List</IRI>
+        <Literal>point_list</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/cartCoord#hasPlacement</IRI>
+        <Literal>Establecer una ubicación</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/cartCoord#hasPoint</IRI>
+        <Literal xml:lang="es">Establecer un punto exacto de localización</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/cartCoord#located_in</IRI>
+        <Literal xml:lang="es">Localización geográfica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/net/cartCoord#located_in</IRI>
+        <Literal>located_in_point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/cartCoord#xcoord</IRI>
+        <Literal xml:lang="es">Corresponde a la coordenada X o longitud.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/cartCoord#ycoord</IRI>
+        <Literal xml:lang="es">Corresponde a la coordenada Y o latitud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/net/cartCoord#zcoord</IRI>
+        <Literal xml:lang="es">Corresponde a la coordenada Z o cota</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Andalusian</IRI>
+        <Literal xml:lang="es">Instancia correspondiente a la cocina andaluza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Andalusian</IRI>
+        <Literal>Andalusian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#April</IRI>
+        <Literal xml:lang="es">Abril</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#April</IRI>
+        <Literal>April</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Attraction</IRI>
+        <Literal xml:lang="es">Representa una atracción como jardín o playa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Attraction</IRI>
+        <Literal>attraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AttractionType</IRI>
+        <Literal xml:lang="es">Tipo de atracción, como playa o museo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AttractionType</IRI>
+        <Literal>attraction_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#August</IRI>
+        <Literal xml:lang="es">Agosto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#August</IRI>
+        <Literal>August</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Beach</IRI>
+        <Literal xml:lang="es">Tipo de atracción relacionada con actividades en la playa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Beach</IRI>
+        <Literal>Beach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BeachHotel</IRI>
+        <Literal xml:lang="es">Hotel playero</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BeachHotel</IRI>
+        <Literal>Beach Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bus</IRI>
+        <Literal xml:lang="es">Medio de transporte basado en autobús</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bus</IRI>
+        <Literal>Bus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BusinessHotel</IRI>
+        <Literal xml:lang="es">Hotel de negocios</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BusinessHotel</IRI>
+        <Literal>Business Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#City</IRI>
+        <Literal xml:lang="es">Representa una ciudad física</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#City</IRI>
+        <Literal>city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cuisine</IRI>
+        <Literal xml:lang="es">Representa un estilo de comida, como mejicana o japonesa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cuisine</IRI>
+        <Literal>cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cultural</IRI>
+        <Literal xml:lang="es">Tipo de atracción relacionada con actividades culturales</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cultural</IRI>
+        <Literal>Cultural</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CulturalEvent</IRI>
+        <Literal xml:lang="es">Evento de tipo cultural</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CulturalEvent</IRI>
+        <Literal>Cultural Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Date</IRI>
+        <Literal xml:lang="es">Representa una fecha.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Date</IRI>
+        <Literal>date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Date</IRI>
+        <Literal>https://www.ontotext.com/proton/protonext.html#Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Day</IRI>
+        <Literal xml:lang="es">Representa un día del mes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Day</IRI>
+        <Literal>day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Day</IRI>
+        <Literal>http://www.ontotext.com/proton/protonext#DayOfMonth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#December</IRI>
+        <Literal xml:lang="es">Diciembre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#December</IRI>
+        <Literal>December</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeluxeHotel</IRI>
+        <Literal xml:lang="es">Hotel lujoso</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeluxeHotel</IRI>
+        <Literal>Deluxe Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="es">Representa un evento o suceso que puede ser de interés turístico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Event</IRI>
+        <Literal>event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EventType</IRI>
+        <Literal xml:lang="es">Clase que representa un tipo de evento, como musical o tecnológico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventType</IRI>
+        <Literal>event_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#February</IRI>
+        <Literal xml:lang="es">Febrero</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#February</IRI>
+        <Literal>February</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Garden</IRI>
+        <Literal xml:lang="es">Tipo de atracción relacionada con jardines y parques</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Garden</IRI>
+        <Literal>Garden</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Gastronomic</IRI>
+        <Literal xml:lang="es">Evento de tipo gastronómico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Gastronomic</IRI>
+        <Literal>Gastronomic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hotel</IRI>
+        <Literal xml:lang="es">Representación de un alojamiento para viajeros.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hotel</IRI>
+        <Literal>hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HotelCategory</IRI>
+        <Literal xml:lang="es">Categoría corriente en estrellas de los alojamientos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HotelCategory</IRI>
+        <Literal>hotel_category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HotelType</IRI>
+        <Literal xml:lang="es">Representa un tipo de hotel: playero, lujoso, rural, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HotelType</IRI>
+        <Literal>hotel_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Italian</IRI>
+        <Literal xml:lang="es">Instancia correspondiente a la cocina italiana</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Italian</IRI>
+        <Literal>Italian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#January</IRI>
+        <Literal xml:lang="es">Enero</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#January</IRI>
+        <Literal>January</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Japanese</IRI>
+        <Literal xml:lang="es">Instancia correspondiente a la cocina japonesa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Japanese</IRI>
+        <Literal>Japanese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#July</IRI>
+        <Literal xml:lang="es">Julio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#July</IRI>
+        <Literal>July</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#June</IRI>
+        <Literal xml:lang="es">Junio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#June</IRI>
+        <Literal>June</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#March</IRI>
+        <Literal xml:lang="es">Marzo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#March</IRI>
+        <Literal>March</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#May</IRI>
+        <Literal xml:lang="es">Mayo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#May</IRI>
+        <Literal>May</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mediterranean</IRI>
+        <Literal xml:lang="es">Instancia correspondiente a la cocina mediterránea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mediterranean</IRI>
+        <Literal>Mediterranean</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Metro</IRI>
+        <Literal xml:lang="es">Medio de transporte basado en metro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Metro</IRI>
+        <Literal>Metro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mexican</IRI>
+        <Literal xml:lang="es">Instancia correspondiente a la cocina mejicana</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mexican</IRI>
+        <Literal>Mexican</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Month</IRI>
+        <Literal xml:lang="es">Representa un mes del año</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Month</IRI>
+        <Literal>month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Month</IRI>
+        <Literal>http://www.ontotext.com/proton/protonext#Month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Monument</IRI>
+        <Literal xml:lang="es">Tipo de atracción de carácter monumental o histórico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Monument</IRI>
+        <Literal>Monument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Museum</IRI>
+        <Literal xml:lang="es">Tipo de atracción relacionada con museos y galerías</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Museum</IRI>
+        <Literal>Museum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Musical</IRI>
+        <Literal xml:lang="es">Evento de tipo musical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Musical</IRI>
+        <Literal>Musical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#November</IRI>
+        <Literal xml:lang="es">Noviembre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#November</IRI>
+        <Literal>November</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#October</IRI>
+        <Literal xml:lang="es">Octubre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#October</IRI>
+        <Literal>October</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Price</IRI>
+        <Literal xml:lang="es">Indica el valor numérico del precio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Price</IRI>
+        <Literal>price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PublicCycle</IRI>
+        <Literal xml:lang="es">Medio de transporte basado en bicicleta de uso público</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PublicCycle</IRI>
+        <Literal>Public Cycle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rating</IRI>
+        <Literal xml:lang="es">Representa una puntuación o valoración por parte de un humano</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rating</IRI>
+        <Literal>rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Restaurant</IRI>
+        <Literal xml:lang="es">Representa un establecimiento de restauración</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Restaurant</IRI>
+        <Literal>restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RuralHotel</IRI>
+        <Literal xml:lang="es">Hotel de tipo rural</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RuralHotel</IRI>
+        <Literal>Rural Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Score</IRI>
+        <Literal xml:lang="es">Indica el valor de la puntuación otorgada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Score</IRI>
+        <Literal>score</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#September</IRI>
+        <Literal xml:lang="es">Septiembre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#September</IRI>
+        <Literal>September</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sports</IRI>
+        <Literal xml:lang="es">Evento relacionado con los deportes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sports</IRI>
+        <Literal>Sports</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Taxi</IRI>
+        <Literal xml:lang="es">Medio de transporte basado en taxis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Taxi</IRI>
+        <Literal>Taxi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tech</IRI>
+        <Literal xml:lang="es">Evento de tipo tecnológico o científico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tech</IRI>
+        <Literal>Tech</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TouristicHotel</IRI>
+        <Literal xml:lang="es">Hotel de entorno turístico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TouristicHotel</IRI>
+        <Literal>Touristic Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transport</IRI>
+        <Literal xml:lang="es">Representación de un sistema de trasporte directamente utilizable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transport</IRI>
+        <Literal>transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportationMean</IRI>
+        <Literal xml:lang="es">Medio de transporte genérico, como &quot;tranvía&quot; o &quot;taxi&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransportationMean</IRI>
+        <Literal>transportation_mean</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Trolley</IRI>
+        <Literal xml:lang="es">Medio de transporte basado en tranvía</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Trolley</IRI>
+        <Literal>Trolley</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Year</IRI>
+        <Literal xml:lang="es">Representa un año del calendario.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Year</IRI>
+        <Literal>year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Year</IRI>
+        <Literal>http://www.ontotext.com/proton/protonext#CalendarYear</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cooking_style</IRI>
+        <Literal xml:lang="es">Estilo de cocina de un restaurante</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cooking_style</IRI>
+        <Literal>cooking_style</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#day_of_month</IRI>
+        <Literal xml:lang="es">Valor numérico del día del mes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#day_of_month</IRI>
+        <Literal>day of month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_day</IRI>
+        <Literal xml:lang="es">Es el día indicado</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_day</IRI>
+        <Literal>has_day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_month</IRI>
+        <Literal xml:lang="es">Es el mes indicado</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_month</IRI>
+        <Literal>has_month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_year</IRI>
+        <Literal xml:lang="es">Es el año indicado</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#has_year</IRI>
+        <Literal>has_year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_categorized</IRI>
+        <Literal xml:lang="es">El hotel es de la categoría relacionada.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#is_categorized</IRI>
+        <Literal>has_category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#located_in_City</IRI>
+        <Literal xml:lang="es">La entidad pertenece a la ciudad indicada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#located_in_City</IRI>
+        <Literal>located_in_city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#occurs_in_City</IRI>
+        <Literal xml:lang="es">Indica en qué ciudad tiene lugar un evento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#occurs_in_City</IRI>
+        <Literal>occurs_in_city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#occurs_in_date</IRI>
+        <Literal xml:lang="es">Fecha en la que ocurre un evento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#occurs_in_date</IRI>
+        <Literal>ocurrs_in_date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rated</IRI>
+        <Literal xml:lang="es">Propiedad de ser puntuado por un usuario</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rated</IRI>
+        <Literal>is_rated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#type_of_attraction</IRI>
+        <Literal xml:lang="es">Indica qué tipo de atracción es</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#type_of_attraction</IRI>
+        <Literal>is_attraction_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#type_of_event</IRI>
+        <Literal xml:lang="es">Indica el tipo de evento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#type_of_event</IRI>
+        <Literal>is_event_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#type_of_hotel</IRI>
+        <Literal xml:lang="es">Indica o vincula el tipo de establecimiento hotelero</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#type_of_hotel</IRI>
+        <Literal>is_hotel_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#type_of_transportation</IRI>
+        <Literal xml:lang="es">Vincula un transporte real con el medio de transporte que usa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#type_of_transportation</IRI>
+        <Literal>is_transportation_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</IRI>
+        <Literal xml:lang="es">Clase que representa un punto geográfico o bien una lista de puntos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</IRI>
+        <Literal>spatial_thing</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
