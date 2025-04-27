@@ -65,6 +65,15 @@
         <Class IRI="#Year"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#expensive_restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#practical_city"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pre_season_event"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#transport_company"/>
     </Declaration>
     <Declaration>
@@ -336,6 +345,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#2024-06-28"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
@@ -387,6 +399,18 @@
             <NamedIndividual IRI="#Trolley"/>
         </ObjectOneOf>
     </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#expensive_restaurant"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#practical_city"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pre_season_event"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
     <ClassAssertion>
         <Class IRI="#Cuisine"/>
         <NamedIndividual IRI="#Andalusian"/>
@@ -871,21 +895,6 @@
         <NamedIndividual IRI="#ValenciaPos"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_day"/>
-        <NamedIndividual IRI="#Year2024"/>
-        <NamedIndividual IRI="#Day28"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_month"/>
-        <NamedIndividual IRI="#Year2024"/>
-        <NamedIndividual IRI="#June"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#has_year"/>
-        <NamedIndividual IRI="#Year2024"/>
-        <NamedIndividual IRI="#Year2024"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
         <NamedIndividual IRI="#Zaragoza"/>
         <NamedIndividual IRI="#ZaragozaPos"/>
@@ -933,12 +942,12 @@
     <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/net/cartCoord#xcoord"/>
         <NamedIndividual IRI="#BarcelonaPos"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.1686</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.1686</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/net/cartCoord#ycoord"/>
         <NamedIndividual IRI="#BarcelonaPos"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">41.3874</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">41.3874</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#day_of_month"/>
@@ -963,12 +972,12 @@
     <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/net/cartCoord#xcoord"/>
         <NamedIndividual IRI="#MadridPos"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-3.7038</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-3.7038</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/net/cartCoord#ycoord"/>
         <NamedIndividual IRI="#MadridPos"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40.4168</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">40.4168</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Score"/>
@@ -978,7 +987,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#Score"/>
         <NamedIndividual IRI="#R4.0"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal"></Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Score"/>
@@ -1008,58 +1017,33 @@
     <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/net/cartCoord#xcoord"/>
         <NamedIndividual IRI="#ToledoPos"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-4.0273</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-4.0273</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/net/cartCoord#ycoord"/>
         <NamedIndividual IRI="#ToledoPos"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">39.8628</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">39.8628</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/net/cartCoord#xcoord"/>
         <NamedIndividual IRI="#ValenciaPos"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.3763</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-0.3763</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/net/cartCoord#ycoord"/>
         <NamedIndividual IRI="#ValenciaPos"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">39.4699</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#day_of_month"/>
-        <NamedIndividual IRI="#Year2024"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">39.4699</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/net/cartCoord#xcoord"/>
         <NamedIndividual IRI="#ZaragozaPos"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.8891</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">-0.8891</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://purl.org/net/cartCoord#ycoord"/>
         <NamedIndividual IRI="#ZaragozaPos"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">41.6488</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">41.6488</Literal>
     </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#has_month"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#located_in_City"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#occurs_in_City"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#rated"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#type_of_transportation"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
     </FunctionalObjectProperty>
@@ -1074,9 +1058,6 @@
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#is_categorized"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#located_in_City"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#occurs_in_City"/>
@@ -1112,40 +1093,12 @@
         <Class IRI="#Hotel"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#located_in_City"/>
-        <Class IRI="#Attraction"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#located_in_City"/>
-        <Class IRI="#Hotel"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#located_in_City"/>
-        <Class IRI="#Restaurant"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#located_in_City"/>
-        <Class IRI="#Transport"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#occurs_in_City"/>
         <Class IRI="#Attraction"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#occurs_in_date"/>
         <Class IRI="#Event"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#rated"/>
-        <Class IRI="#Attraction"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#rated"/>
-        <Class IRI="#Hotel"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#rated"/>
-        <Class IRI="#Restaurant"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#runned_by"/>
@@ -1166,18 +1119,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#type_of_transportation"/>
         <Class IRI="#Transport"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-        <Class IRI="#Attraction"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-        <Class IRI="#Hotel"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-        <Class IRI="#Restaurant"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
@@ -1239,58 +1180,12 @@
         <ObjectProperty IRI="#type_of_transportation"/>
         <Class IRI="#TransportationMean"/>
     </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-        <Class IRI="#Rating"/>
-    </ObjectPropertyRange>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#Price"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#Score"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#Price"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#Score"/>
-    </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#day_of_month"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
-        <DataProperty IRI="#Price"/>
-        <Class IRI="#Hotel"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Price"/>
-        <Class IRI="#Restaurant"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Price"/>
-        <Class IRI="#Transport"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Score"/>
-        <Class IRI="#Attraction"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Score"/>
-        <Class IRI="#Hotel"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Score"/>
-        <Class IRI="#Restaurant"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-        <Class IRI="#Hotel"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-        <Class IRI="#Restaurant"/>
+        <DataProperty IRI="#day_of_month"/>
+        <Class IRI="#Day"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#Price"/>
@@ -1304,6 +1199,134 @@
         <DataProperty IRI="#day_of_month"/>
         <Datatype abbreviatedIRI="xsd:positiveInteger"/>
     </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Si una ciudad tiene hotel, transporte y restaurante se considera una ciudad práctica.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#City"/>
+                <Variable IRI="/c"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Transport"/>
+                <Variable IRI="/t"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#located_in_City"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/c"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#located_in_City"/>
+                <Variable IRI="/t"/>
+                <Variable IRI="/c"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#located_in_City"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/c"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#practical_city"/>
+                <Variable IRI="/c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Considerar un evento de junio como de pre-sesión</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Date"/>
+                <Variable IRI="/d"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#has_month"/>
+                <Variable IRI="/d"/>
+                <NamedIndividual IRI="#June"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Event"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#occurs_in_date"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/d"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#pre_season_event"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Restaurantes caros a partir de importe 40</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#Price"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/p"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#expensive_restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.org/net/cartCoord#Point</IRI>
@@ -2287,7 +2310,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#day_of_month</IRI>
-        <Literal>day of month</Literal>
+        <Literal>day_month</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

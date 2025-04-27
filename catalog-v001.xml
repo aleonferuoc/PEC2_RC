@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1745733222491" name="http://www.semanticweb.org/jorge/ontologies/2025/3/untitled-ontology-6" uri="ontologia.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1745743214202" name="http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente" uri="ontologia.owx"/>
     </group>
 </catalog>
