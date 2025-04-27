@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/jorge/ontologies/2025/3/untitled-ontology-6"
+     xml:base="http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/jorge/ontologies/2025/3/untitled-ontology-6">
-    <Prefix name="" IRI="http://www.semanticweb.org/jorge/ontologies/2025/3/untitled-ontology-6/"/>
+     ontologyIRI="http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente">
+    <Prefix name="" IRI="http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -65,6 +65,9 @@
         <Class IRI="#Year"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#transport_company"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
     </Declaration>
     <Declaration>
@@ -93,6 +96,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#rated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#runned_by"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#type_of_attraction"/>
@@ -125,6 +131,18 @@
         <NamedIndividual IRI="#August"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AutobusMadrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AutobusesBarcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BarcelonaPos"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Beach"/>
     </Declaration>
     <Declaration>
@@ -137,10 +155,25 @@
         <NamedIndividual IRI="#BusinessHotel"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#CastilloToledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CatedralMadrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CongresoBarcelona"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cultural"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CulturalEvent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Day22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Day28"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#December"/>
@@ -152,10 +185,19 @@
         <NamedIndividual IRI="#February"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#FestivalZaragoza"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Garden"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Gastronomic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotelRoyalBarcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotelVistaToledo"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Italian"/>
@@ -173,6 +215,12 @@
         <NamedIndividual IRI="#June"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MadridPos"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#March"/>
     </Declaration>
     <Declaration>
@@ -183,6 +231,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Metro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MetroMadrid"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Mexican"/>
@@ -203,7 +254,31 @@
         <NamedIndividual IRI="#October"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ParqueValencia"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#PublicCycle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R3.7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R4.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R4.2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R4.6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R4.7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RestauranteFusionBarcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RestauranteGourmetMadrid"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#RuralHotel"/>
@@ -215,16 +290,52 @@
         <NamedIndividual IRI="#Sports"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Stars3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stars4"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Taxi"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Tech"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ToledoPos"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#TouristicHotel"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Trolley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UrbanBarcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Valencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ValenciaPos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Year2024"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ZaragozaPos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2024-02-22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2024-06-28"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
@@ -289,6 +400,22 @@
         <NamedIndividual IRI="#August"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Transport"/>
+        <NamedIndividual IRI="#AutobusMadrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transport"/>
+        <NamedIndividual IRI="#AutobusesBarcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/cartCoord#Point"/>
+        <NamedIndividual IRI="#BarcelonaPos"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AttractionType"/>
         <NamedIndividual IRI="#Beach"/>
     </ClassAssertion>
@@ -305,12 +432,32 @@
         <NamedIndividual IRI="#BusinessHotel"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Attraction"/>
+        <NamedIndividual IRI="#CastilloToledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Attraction"/>
+        <NamedIndividual IRI="#CatedralMadrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#CongresoBarcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AttractionType"/>
         <NamedIndividual IRI="#Cultural"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#EventType"/>
         <NamedIndividual IRI="#CulturalEvent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day"/>
+        <NamedIndividual IRI="#Day22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day"/>
+        <NamedIndividual IRI="#Day28"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Month"/>
@@ -325,12 +472,24 @@
         <NamedIndividual IRI="#February"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#FestivalZaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AttractionType"/>
         <NamedIndividual IRI="#Garden"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#EventType"/>
         <NamedIndividual IRI="#Gastronomic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#HotelRoyalBarcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#HotelVistaToledo"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Cuisine"/>
@@ -353,6 +512,14 @@
         <NamedIndividual IRI="#June"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/cartCoord#Point"/>
+        <NamedIndividual IRI="#MadridPos"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Month"/>
         <NamedIndividual IRI="#March"/>
     </ClassAssertion>
@@ -367,6 +534,10 @@
     <ClassAssertion>
         <Class IRI="#TransportationMean"/>
         <NamedIndividual IRI="#Metro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#transport_company"/>
+        <NamedIndividual IRI="#MetroMadrid"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Cuisine"/>
@@ -393,8 +564,40 @@
         <NamedIndividual IRI="#October"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Attraction"/>
+        <NamedIndividual IRI="#ParqueValencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#TransportationMean"/>
         <NamedIndividual IRI="#PublicCycle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rating"/>
+        <NamedIndividual IRI="#R3.7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rating"/>
+        <NamedIndividual IRI="#R4.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rating"/>
+        <NamedIndividual IRI="#R4.2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rating"/>
+        <NamedIndividual IRI="#R4.6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rating"/>
+        <NamedIndividual IRI="#R4.7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#RestauranteFusionBarcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Restaurant"/>
+        <NamedIndividual IRI="#RestauranteGourmetMadrid"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#HotelType"/>
@@ -409,12 +612,28 @@
         <NamedIndividual IRI="#Sports"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#HotelCategory"/>
+        <NamedIndividual IRI="#Stars3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelCategory"/>
+        <NamedIndividual IRI="#Stars4"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#TransportationMean"/>
         <NamedIndividual IRI="#Taxi"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#EventType"/>
         <NamedIndividual IRI="#Tech"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/cartCoord#Point"/>
+        <NamedIndividual IRI="#ToledoPos"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#HotelType"/>
@@ -424,6 +643,403 @@
         <Class IRI="#TransportationMean"/>
         <NamedIndividual IRI="#Trolley"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#transport_company"/>
+        <NamedIndividual IRI="#UrbanBarcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/cartCoord#Point"/>
+        <NamedIndividual IRI="#ValenciaPos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Year"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://purl.org/net/cartCoord#Point"/>
+        <NamedIndividual IRI="#ZaragozaPos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Date"/>
+        <NamedIndividual IRI="#2024-02-22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Date"/>
+        <NamedIndividual IRI="#2024-06-28"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in_City"/>
+        <NamedIndividual IRI="#AutobusMadrid"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#runned_by"/>
+        <NamedIndividual IRI="#AutobusMadrid"/>
+        <NamedIndividual IRI="#MetroMadrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#type_of_transportation"/>
+        <NamedIndividual IRI="#AutobusMadrid"/>
+        <NamedIndividual IRI="#Bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in_City"/>
+        <NamedIndividual IRI="#AutobusesBarcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#runned_by"/>
+        <NamedIndividual IRI="#AutobusesBarcelona"/>
+        <NamedIndividual IRI="#UrbanBarcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#type_of_transportation"/>
+        <NamedIndividual IRI="#AutobusesBarcelona"/>
+        <NamedIndividual IRI="#Bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
+        <NamedIndividual IRI="#Barcelona"/>
+        <NamedIndividual IRI="#BarcelonaPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#occurs_in_City"/>
+        <NamedIndividual IRI="#CastilloToledo"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rated"/>
+        <NamedIndividual IRI="#CastilloToledo"/>
+        <NamedIndividual IRI="#R3.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#type_of_attraction"/>
+        <NamedIndividual IRI="#CastilloToledo"/>
+        <NamedIndividual IRI="#Monument"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#occurs_in_City"/>
+        <NamedIndividual IRI="#CatedralMadrid"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rated"/>
+        <NamedIndividual IRI="#CatedralMadrid"/>
+        <NamedIndividual IRI="#R4.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#type_of_attraction"/>
+        <NamedIndividual IRI="#CatedralMadrid"/>
+        <NamedIndividual IRI="#Beach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#occurs_in_City"/>
+        <NamedIndividual IRI="#CongresoBarcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#occurs_in_date"/>
+        <NamedIndividual IRI="#CongresoBarcelona"/>
+        <NamedIndividual IRI="#2024-06-28"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#type_of_event"/>
+        <NamedIndividual IRI="#CongresoBarcelona"/>
+        <NamedIndividual IRI="#Gastronomic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#occurs_in_City"/>
+        <NamedIndividual IRI="#FestivalZaragoza"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#occurs_in_date"/>
+        <NamedIndividual IRI="#FestivalZaragoza"/>
+        <NamedIndividual IRI="#2024-02-22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#type_of_event"/>
+        <NamedIndividual IRI="#FestivalZaragoza"/>
+        <NamedIndividual IRI="#Musical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_categorized"/>
+        <NamedIndividual IRI="#HotelRoyalBarcelona"/>
+        <NamedIndividual IRI="#Stars4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in_City"/>
+        <NamedIndividual IRI="#HotelRoyalBarcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rated"/>
+        <NamedIndividual IRI="#HotelRoyalBarcelona"/>
+        <NamedIndividual IRI="#R4.0"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#type_of_hotel"/>
+        <NamedIndividual IRI="#HotelRoyalBarcelona"/>
+        <NamedIndividual IRI="#BeachHotel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_categorized"/>
+        <NamedIndividual IRI="#HotelVistaToledo"/>
+        <NamedIndividual IRI="#Stars3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in_City"/>
+        <NamedIndividual IRI="#HotelVistaToledo"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rated"/>
+        <NamedIndividual IRI="#HotelVistaToledo"/>
+        <NamedIndividual IRI="#R4.6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#type_of_hotel"/>
+        <NamedIndividual IRI="#HotelVistaToledo"/>
+        <NamedIndividual IRI="#TouristicHotel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
+        <NamedIndividual IRI="#Madrid"/>
+        <NamedIndividual IRI="#MadridPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#occurs_in_City"/>
+        <NamedIndividual IRI="#ParqueValencia"/>
+        <NamedIndividual IRI="#Valencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rated"/>
+        <NamedIndividual IRI="#ParqueValencia"/>
+        <NamedIndividual IRI="#R3.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#type_of_attraction"/>
+        <NamedIndividual IRI="#ParqueValencia"/>
+        <NamedIndividual IRI="#Museum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking_style"/>
+        <NamedIndividual IRI="#RestauranteFusionBarcelona"/>
+        <NamedIndividual IRI="#Mediterranean"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in_City"/>
+        <NamedIndividual IRI="#RestauranteFusionBarcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rated"/>
+        <NamedIndividual IRI="#RestauranteFusionBarcelona"/>
+        <NamedIndividual IRI="#R4.2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cooking_style"/>
+        <NamedIndividual IRI="#RestauranteGourmetMadrid"/>
+        <NamedIndividual IRI="#Mexican"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in_City"/>
+        <NamedIndividual IRI="#RestauranteGourmetMadrid"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rated"/>
+        <NamedIndividual IRI="#RestauranteGourmetMadrid"/>
+        <NamedIndividual IRI="#R4.7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
+        <NamedIndividual IRI="#Toledo"/>
+        <NamedIndividual IRI="#ToledoPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
+        <NamedIndividual IRI="#Valencia"/>
+        <NamedIndividual IRI="#ValenciaPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_day"/>
+        <NamedIndividual IRI="#Year2024"/>
+        <NamedIndividual IRI="#Day28"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_month"/>
+        <NamedIndividual IRI="#Year2024"/>
+        <NamedIndividual IRI="#June"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_year"/>
+        <NamedIndividual IRI="#Year2024"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+        <NamedIndividual IRI="#ZaragozaPos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_day"/>
+        <NamedIndividual IRI="#2024-02-22"/>
+        <NamedIndividual IRI="#Day22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_month"/>
+        <NamedIndividual IRI="#2024-02-22"/>
+        <NamedIndividual IRI="#February"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_year"/>
+        <NamedIndividual IRI="#2024-02-22"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_day"/>
+        <NamedIndividual IRI="#2024-06-28"/>
+        <NamedIndividual IRI="#Day28"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_month"/>
+        <NamedIndividual IRI="#2024-06-28"/>
+        <NamedIndividual IRI="#June"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_year"/>
+        <NamedIndividual IRI="#2024-06-28"/>
+        <NamedIndividual IRI="#Year2024"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#AutobusMadrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#AutobusesBarcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.54</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/net/cartCoord#xcoord"/>
+        <NamedIndividual IRI="#BarcelonaPos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.1686</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/net/cartCoord#ycoord"/>
+        <NamedIndividual IRI="#BarcelonaPos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">41.3874</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#day_of_month"/>
+        <NamedIndividual IRI="#Day22"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#day_of_month"/>
+        <NamedIndividual IRI="#Day28"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#HotelRoyalBarcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">252</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#HotelVistaToledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/net/cartCoord#xcoord"/>
+        <NamedIndividual IRI="#MadridPos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-3.7038</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/net/cartCoord#ycoord"/>
+        <NamedIndividual IRI="#MadridPos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40.4168</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Score"/>
+        <NamedIndividual IRI="#R3.7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Score"/>
+        <NamedIndividual IRI="#R4.0"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Score"/>
+        <NamedIndividual IRI="#R4.2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Score"/>
+        <NamedIndividual IRI="#R4.6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Score"/>
+        <NamedIndividual IRI="#R4.7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#RestauranteFusionBarcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">51</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#RestauranteGourmetMadrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/net/cartCoord#xcoord"/>
+        <NamedIndividual IRI="#ToledoPos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-4.0273</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/net/cartCoord#ycoord"/>
+        <NamedIndividual IRI="#ToledoPos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">39.8628</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/net/cartCoord#xcoord"/>
+        <NamedIndividual IRI="#ValenciaPos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.3763</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/net/cartCoord#ycoord"/>
+        <NamedIndividual IRI="#ValenciaPos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">39.4699</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#day_of_month"/>
+        <NamedIndividual IRI="#Year2024"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/net/cartCoord#xcoord"/>
+        <NamedIndividual IRI="#ZaragozaPos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.8891</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/net/cartCoord#ycoord"/>
+        <NamedIndividual IRI="#ZaragozaPos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">41.6488</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#has_month"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -467,6 +1083,9 @@
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#occurs_in_date"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#runned_by"/>
     </FunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.org/net/cartCoord#located_in"/>
@@ -527,6 +1146,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#rated"/>
         <Class IRI="#Restaurant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#runned_by"/>
+        <Class IRI="#Transport"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#type_of_attraction"/>
@@ -595,6 +1218,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#rated"/>
         <Class IRI="#Rating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#runned_by"/>
+        <Class IRI="#transport_company"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#type_of_attraction"/>
@@ -784,6 +1411,46 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AutobusMadrid</IRI>
+        <Literal xml:lang="es">Sistema de transporte autobuses Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AutobusMadrid</IRI>
+        <Literal>AutobusesMadrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AutobusesBarcelona</IRI>
+        <Literal xml:lang="es">Sistema de transporte autobuses de Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AutobusesBarcelona</IRI>
+        <Literal>AutobusesBarcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Barcelona</IRI>
+        <Literal xml:lang="es">La ciudad de Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Barcelona</IRI>
+        <Literal>Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BarcelonaPos</IRI>
+        <Literal xml:lang="es">Coordenadas de la ciudad de Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BarcelonaPos</IRI>
+        <Literal>BarcelonaPos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Beach</IRI>
         <Literal xml:lang="es">Tipo de atracción relacionada con actividades en la playa</Literal>
     </AnnotationAssertion>
@@ -824,6 +1491,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CastilloToledo</IRI>
+        <Literal xml:lang="es">Atracción del Castillo de Toledo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CastilloToledo</IRI>
+        <Literal>CastilloToledo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CatedralMadrid</IRI>
+        <Literal xml:lang="es">Atracción de la Catedral de Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CatedralMadrid</IRI>
+        <Literal>CatedralMadrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#City</IRI>
         <Literal xml:lang="es">Representa una ciudad física</Literal>
     </AnnotationAssertion>
@@ -831,6 +1518,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#City</IRI>
         <Literal>city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CongresoBarcelona</IRI>
+        <Literal xml:lang="es">Representación del evento Congreso Gastronómico de Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CongresoBarcelona</IRI>
+        <Literal>CongresoBarcelona</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -894,6 +1591,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Day22</IRI>
+        <Literal xml:lang="es">Día 22 del mes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Day22</IRI>
+        <Literal>Day22</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Day28</IRI>
+        <Literal xml:lang="es">Día 28 del mes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Day28</IRI>
+        <Literal>Day28</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#December</IRI>
         <Literal xml:lang="es">Diciembre</Literal>
     </AnnotationAssertion>
@@ -944,6 +1661,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FestivalZaragoza</IRI>
+        <Literal xml:lang="es">Evento Festival de Zaragoza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FestivalZaragoza</IRI>
+        <Literal>FestivalZaragoza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Garden</IRI>
         <Literal xml:lang="es">Tipo de atracción relacionada con jardines y parques</Literal>
     </AnnotationAssertion>
@@ -984,6 +1711,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HotelRoyalBarcelona</IRI>
+        <Literal xml:lang="es">Hotel Royal de Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HotelRoyalBarcelona</IRI>
+        <Literal>HotelRoyalBarcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HotelType</IRI>
         <Literal xml:lang="es">Representa un tipo de hotel: playero, lujoso, rural, etc.</Literal>
     </AnnotationAssertion>
@@ -991,6 +1728,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#HotelType</IRI>
         <Literal>hotel_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HotelVistaToledo</IRI>
+        <Literal xml:lang="es">Hotel Vista Toledo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HotelVistaToledo</IRI>
+        <Literal>HotelVistaToledo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1044,6 +1791,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Madrid</IRI>
+        <Literal xml:lang="es">La ciudad de Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Madrid</IRI>
+        <Literal>Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MadridPos</IRI>
+        <Literal xml:lang="es">Coordenadas de la ciudad de Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MadridPos</IRI>
+        <Literal>MadridPos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#March</IRI>
         <Literal xml:lang="es">Marzo</Literal>
     </AnnotationAssertion>
@@ -1081,6 +1848,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Metro</IRI>
         <Literal>Metro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MetroMadrid</IRI>
+        <Literal>Compañía Metro Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MetroMadrid</IRI>
+        <Literal>ComMetroMadrid</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1159,6 +1936,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParqueValencia</IRI>
+        <Literal xml:lang="es">La atracción de Parque Valencia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ParqueValencia</IRI>
+        <Literal>ParqueValencia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Price</IRI>
         <Literal xml:lang="es">Indica el valor numérico del precio</Literal>
     </AnnotationAssertion>
@@ -1179,6 +1966,56 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#R3.7</IRI>
+        <Literal xml:lang="es">Puntuación de 3.7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#R3.7</IRI>
+        <Literal>R3.7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#R4.0</IRI>
+        <Literal xml:lang="es">Puntuación de 4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#R4.0</IRI>
+        <Literal>R4.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#R4.2</IRI>
+        <Literal>Puntuación de 4.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#R4.2</IRI>
+        <Literal>R4.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#R4.6</IRI>
+        <Literal>Puntuación de 4.6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#R4.6</IRI>
+        <Literal>R4.6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#R4.7</IRI>
+        <Literal>Puntuación de 4.7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#R4.7</IRI>
+        <Literal>R4.7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Rating</IRI>
         <Literal xml:lang="es">Representa una puntuación o valoración por parte de un humano</Literal>
     </AnnotationAssertion>
@@ -1196,6 +2033,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Restaurant</IRI>
         <Literal>restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestauranteFusionBarcelona</IRI>
+        <Literal xml:lang="es">Restaurante Fusión Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestauranteFusionBarcelona</IRI>
+        <Literal>RestauranteFusionBarcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestauranteGourmetMadrid</IRI>
+        <Literal xml:lang="es">Restaurante Gourmet Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestauranteGourmetMadrid</IRI>
+        <Literal>RestauranteGourmetMadrid</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1239,6 +2096,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stars3</IRI>
+        <Literal xml:lang="es">Categoría de hotel de 3 estrellas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Stars3</IRI>
+        <Literal>***</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stars4</IRI>
+        <Literal xml:lang="es">Categoría de hotel de 4 estrellas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Stars4</IRI>
+        <Literal>****</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Taxi</IRI>
         <Literal xml:lang="es">Medio de transporte basado en taxis</Literal>
     </AnnotationAssertion>
@@ -1256,6 +2133,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Tech</IRI>
         <Literal>Tech</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Toledo</IRI>
+        <Literal xml:lang="es">La ciudad de Toledo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Toledo</IRI>
+        <Literal>Toledo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ToledoPos</IRI>
+        <Literal xml:lang="es">Las coordenadas de la ciudad de Toledo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ToledoPos</IRI>
+        <Literal>ToledoPos</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1299,6 +2196,36 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanBarcelona</IRI>
+        <Literal xml:lang="es">La empresa de transportes Urban Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UrbanBarcelona</IRI>
+        <Literal>ComUrbanValencia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Valencia</IRI>
+        <Literal xml:lang="es">La ciudad de Valencia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Valencia</IRI>
+        <Literal>Valencia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ValenciaPos</IRI>
+        <Literal xml:lang="es">Las coordenadas de la ciudad de Valencia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ValenciaPos</IRI>
+        <Literal>ValenciaPos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Year</IRI>
         <Literal xml:lang="es">Representa un año del calendario.</Literal>
     </AnnotationAssertion>
@@ -1311,6 +2238,36 @@
         <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
         <IRI>#Year</IRI>
         <Literal>http://www.ontotext.com/proton/protonext#CalendarYear</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Year2024</IRI>
+        <Literal xml:lang="es">Año 2024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Year2024</IRI>
+        <Literal>Year2024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Zaragoza</IRI>
+        <Literal xml:lang="es">La ciudad de Zaragoza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Zaragoza</IRI>
+        <Literal>Zaragoza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ZaragozaPos</IRI>
+        <Literal xml:lang="es">Las coordenadas de la ciudad de Zaragoza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZaragozaPos</IRI>
+        <Literal>ZaragozaPos</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1414,6 +2371,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#runned_by</IRI>
+        <Literal xml:lang="es">Relaciona el medio de transporte con la empresa operadora</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#runned_by</IRI>
+        <Literal>runned_by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#transport_company</IRI>
+        <Literal xml:lang="es">Empresa de transportes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transport_company</IRI>
+        <Literal>transport_company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#type_of_attraction</IRI>
         <Literal xml:lang="es">Indica qué tipo de atracción es</Literal>
     </AnnotationAssertion>
@@ -1451,6 +2428,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#type_of_transportation</IRI>
         <Literal>is_transportation_type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#2024-02-22</IRI>
+        <Literal xml:lang="es">Fecha 22/02/2024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#2024-02-22</IRI>
+        <Literal>Date2024-02-22</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#2024-06-28</IRI>
+        <Literal xml:lang="es">Fecha 28/06/2024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#2024-06-28</IRI>
+        <Literal>Date2024-06-28</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
