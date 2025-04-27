@@ -1,0 +1,1087 @@
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/net/cartCoord#> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente> <http://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by/4.0/" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente> <http://purl.org/dc/elements/1.1/creator> "Jorge, Pablo y Arturo" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente> <http://purl.org/dc/elements/1.1/description> "Ontología para describir ciudades, hoteles, transportes y eventos turísticos inteligentes en España" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente> <http://purl.org/dc/elements/1.1/modified> "2025-04-27^^xsd:date" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente> <http://purl.org/vocab/vann/preferredNamespacePrefix> "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ti" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente> <http://www.w3.org/2000/01/rdf-schema#label> "Turismo Inteligente Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/modified
+<http://purl.org/dc/elements/1.1/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/net/cartCoord#located_in
+<http://purl.org/net/cartCoord#located_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/cartCoord#located_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/net/cartCoord#located_in> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> .
+<http://purl.org/net/cartCoord#located_in> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/cartCoord#Point> .
+<http://purl.org/net/cartCoord#located_in> <http://www.w3.org/2000/01/rdf-schema#comment> "Localización geográfica"@es .
+<http://purl.org/net/cartCoord#located_in> <http://www.w3.org/2000/01/rdf-schema#label> "located_in_point" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style> <http://www.w3.org/2000/01/rdf-schema#comment> "Estilo de cocina de un restaurante"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style> <http://www.w3.org/2000/01/rdf-schema#label> "cooking_style" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el día indicado"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day> <http://www.w3.org/2000/01/rdf-schema#label> "has_day" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el mes indicado"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month> <http://www.w3.org/2000/01/rdf-schema#label> "has_month" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el año indicado"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year> <http://www.w3.org/2000/01/rdf-schema#label> "has_year" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized> <http://www.w3.org/2000/01/rdf-schema#comment> "El hotel es de la categoría relacionada."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized> <http://www.w3.org/2000/01/rdf-schema#label> "has_category" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> <http://www.w3.org/2000/01/rdf-schema#comment> "La entidad pertenece a la ciudad indicada"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> <http://www.w3.org/2000/01/rdf-schema#label> "located_in_city" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica en qué ciudad tiene lugar un evento"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City> <http://www.w3.org/2000/01/rdf-schema#label> "occurs_in_city" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que ocurre un evento"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date> <http://www.w3.org/2000/01/rdf-schema#label> "ocurrs_in_date" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad de ser puntuado por un usuario"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated> <http://www.w3.org/2000/01/rdf-schema#label> "is_rated" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona el medio de transporte con la empresa operadora"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by> <http://www.w3.org/2000/01/rdf-schema#label> "runned_by" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica qué tipo de atracción es"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction> <http://www.w3.org/2000/01/rdf-schema#label> "is_attraction_type" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el tipo de evento"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event> <http://www.w3.org/2000/01/rdf-schema#label> "is_event_type" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica o vincula el tipo de establecimiento hotelero"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel> <http://www.w3.org/2000/01/rdf-schema#label> "is_hotel_type" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation> <http://www.w3.org/2000/01/rdf-schema#comment> "Vincula un transporte real con el medio de transporte que usa"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation> <http://www.w3.org/2000/01/rdf-schema#label> "is_transportation_type" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/net/cartCoord#xcoord
+<http://purl.org/net/cartCoord#xcoord> <http://www.w3.org/2000/01/rdf-schema#comment> "Corresponde a la coordenada X o longitud."@es .
+# 
+# http://purl.org/net/cartCoord#ycoord
+<http://purl.org/net/cartCoord#ycoord> <http://www.w3.org/2000/01/rdf-schema#comment> "Corresponde a la coordenada Y o latitud"@es .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el valor numérico del precio"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price> <http://www.w3.org/2000/01/rdf-schema#label> "price" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el valor de la puntuación otorgada"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score> <http://www.w3.org/2000/01/rdf-schema#label> "score" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month> <http://www.w3.org/2000/01/rdf-schema#comment> "Valor numérico del día del mes"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month> <http://www.w3.org/2000/01/rdf-schema#label> "day_month" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/net/cartCoord#Point
+<http://purl.org/net/cartCoord#Point> <http://www.w3.org/2000/01/rdf-schema#comment> "Representación de un punto geográfico en la forma latitud, longitud"@es .
+<http://purl.org/net/cartCoord#Point> <http://www.w3.org/2000/01/rdf-schema#label> "point" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una atracción como jardín o playa"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction> <http://www.w3.org/2000/01/rdf-schema#label> "attraction" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Museum> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Monument> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Garden> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cultural> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Beach> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de atracción, como playa o museo"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType> <http://www.w3.org/2000/01/rdf-schema#label> "attraction_type" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una ciudad física"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> <http://www.w3.org/2000/01/rdf-schema#label> "city" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#oneOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mexican> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mediterranean> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Japanese> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Italian> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Andalusian> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa un estilo de comida, como mejicana o japonesa."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine> <http://www.w3.org/2000/01/rdf-schema#label> "cuisine" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una fecha."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date> <http://www.w3.org/2000/01/rdf-schema#label> "date" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://www.ontotext.com/proton/protonext.html#Date" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa un día del mes"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day> <http://www.w3.org/2000/01/rdf-schema#label> "day" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://www.ontotext.com/proton/protonext#DayOfMonth" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa un evento o suceso que puede ser de interés turístico"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event> <http://www.w3.org/2000/01/rdf-schema#label> "event" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que representa un tipo de evento, como musical o tecnológico."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType> <http://www.w3.org/2000/01/rdf-schema#label> "event_type" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Representación de un alojamiento para viajeros."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "hotel" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Categoría corriente en estrellas de los alojamientos"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory> <http://www.w3.org/2000/01/rdf-schema#label> "hotel_category" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa un tipo de hotel: playero, lujoso, rural, etc."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType> <http://www.w3.org/2000/01/rdf-schema#label> "hotel_type" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#oneOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#September> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#October> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#November> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#May> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#March> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#July> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#January> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#February> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#December> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#August> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#April> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa un mes del año"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> <http://www.w3.org/2000/01/rdf-schema#label> "month" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://www.ontotext.com/proton/protonext#Month" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una puntuación o valoración por parte de un humano"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "rating" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa un establecimiento de restauración"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "restaurant" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "Representación de un sistema de trasporte directamente utilizable."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "transport" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#oneOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Trolley> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Taxi> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#PublicCycle> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Metro> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean> <http://www.w3.org/2000/01/rdf-schema#comment> "Medio de transporte genérico, como \"tranvía\" o \"taxi\"."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean> <http://www.w3.org/2000/01/rdf-schema#label> "transportation_mean" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa un año del calendario."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year> <http://www.w3.org/2000/01/rdf-schema#label> "year" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://www.ontotext.com/proton/protonext#CalendarYear" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#expensive_restaurant
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#expensive_restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#expensive_restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#expensive_restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurante considerado \"caro\"."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#expensive_restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "expensive_restaurant" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#practical_city
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#practical_city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#practical_city> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#practical_city> <http://www.w3.org/2000/01/rdf-schema#comment> "Una especialización de ciudad que se sabe que ofrece al menos un hotel, transporte y restaurante."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#practical_city> <http://www.w3.org/2000/01/rdf-schema#label> "practical_city" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#pre_season_event
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#pre_season_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#pre_season_event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#pre_season_event> <http://www.w3.org/2000/01/rdf-schema#comment> "Una especialización de evento que comienza justo en Junio."@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#pre_season_event> <http://www.w3.org/2000/01/rdf-schema#label> "pre_season_event" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company> <http://www.w3.org/2000/01/rdf-schema#comment> "Empresa de transportes"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company> <http://www.w3.org/2000/01/rdf-schema#label> "transport_company" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Andalusian
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Andalusian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Andalusian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Andalusian> <http://www.w3.org/2000/01/rdf-schema#comment> "Instancia correspondiente a la cocina andaluza"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Andalusian> <http://www.w3.org/2000/01/rdf-schema#label> "Andalusian" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#April
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#April> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#April> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#April> <http://www.w3.org/2000/01/rdf-schema#comment> "Abril"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#April> <http://www.w3.org/2000/01/rdf-schema#label> "April" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#August
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#August> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#August> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#August> <http://www.w3.org/2000/01/rdf-schema#comment> "Agosto"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#August> <http://www.w3.org/2000/01/rdf-schema#label> "August" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusMadrid
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusMadrid> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusMadrid> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MetroMadrid> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusMadrid> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusMadrid> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price> "4.18"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Sistema de transporte autobuses Madrid"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "AutobusesMadrid" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusesBarcelona
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusesBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusesBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusesBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusesBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#UrbanBarcelona> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusesBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusesBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price> "3.54"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusesBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Sistema de transporte autobuses de Barcelona"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusesBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "AutobusesBarcelona" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona> <http://purl.org/net/cartCoord#located_in> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BarcelonaPos> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "La ciudad de Barcelona"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Barcelona" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BarcelonaPos
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BarcelonaPos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BarcelonaPos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/cartCoord#Point> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BarcelonaPos> <http://purl.org/net/cartCoord#xcoord> "2.1686"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BarcelonaPos> <http://purl.org/net/cartCoord#ycoord> "41.3874"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BarcelonaPos> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordenadas de la ciudad de Barcelona"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BarcelonaPos> <http://www.w3.org/2000/01/rdf-schema#label> "BarcelonaPos" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Beach
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Beach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Beach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Beach> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de atracción relacionada con actividades en la playa"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Beach> <http://www.w3.org/2000/01/rdf-schema#label> "Beach" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BeachHotel
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BeachHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BeachHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel playero"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Beach Hotel" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus> <http://www.w3.org/2000/01/rdf-schema#comment> "Medio de transporte basado en autobús"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus> <http://www.w3.org/2000/01/rdf-schema#label> "Bus" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BusinessHotel
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BusinessHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BusinessHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel de negocios"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Business Hotel" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CastilloToledo
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CastilloToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CastilloToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CastilloToledo> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CastilloToledo> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CastilloToledo> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Monument> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CastilloToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Atracción del Castillo de Toledo"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CastilloToledo> <http://www.w3.org/2000/01/rdf-schema#label> "CastilloToledo" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CatedralMadrid
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CatedralMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CatedralMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CatedralMadrid> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CatedralMadrid> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CatedralMadrid> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Beach> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CatedralMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Atracción de la Catedral de Madrid"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CatedralMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "CatedralMadrid" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CongresoBarcelona
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CongresoBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CongresoBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CongresoBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CongresoBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CongresoBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Gastronomic> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CongresoBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Representación del evento Congreso Gastronómico de Barcelona"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CongresoBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "CongresoBarcelona" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cultural
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cultural> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de atracción relacionada con actividades culturales"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cultural> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CulturalEvent
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CulturalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CulturalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento de tipo cultural"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Event" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day22
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day22> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month> "22"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day22> <http://www.w3.org/2000/01/rdf-schema#comment> "Día 22 del mes"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day22> <http://www.w3.org/2000/01/rdf-schema#label> "Day22" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day28
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day28> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month> "28"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day28> <http://www.w3.org/2000/01/rdf-schema#comment> "Día 28 del mes"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day28> <http://www.w3.org/2000/01/rdf-schema#label> "Day28" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#December
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#December> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#December> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#December> <http://www.w3.org/2000/01/rdf-schema#comment> "Diciembre"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#December> <http://www.w3.org/2000/01/rdf-schema#label> "December" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#DeluxeHotel
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#DeluxeHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#DeluxeHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#DeluxeHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel lujoso"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#DeluxeHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Deluxe Hotel" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#February
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#February> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#February> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#February> <http://www.w3.org/2000/01/rdf-schema#comment> "Febrero"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#February> <http://www.w3.org/2000/01/rdf-schema#label> "February" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#FestivalZaragoza
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#FestivalZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#FestivalZaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#FestivalZaragoza> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Zaragoza> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#FestivalZaragoza> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#FestivalZaragoza> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Musical> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#FestivalZaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento Festival de Zaragoza"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#FestivalZaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "FestivalZaragoza" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Garden
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Garden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Garden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Garden> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de atracción relacionada con jardines y parques"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Garden> <http://www.w3.org/2000/01/rdf-schema#label> "Garden" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Gastronomic
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Gastronomic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Gastronomic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Gastronomic> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento de tipo gastronómico"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Gastronomic> <http://www.w3.org/2000/01/rdf-schema#label> "Gastronomic" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars4> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.0> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BeachHotel> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price> "252"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel Royal de Barcelona"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "HotelRoyalBarcelona" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars3> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TouristicHotel> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price> "99"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel Vista Toledo"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo> <http://www.w3.org/2000/01/rdf-schema#label> "HotelVistaToledo" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Italian
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Italian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Italian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Italian> <http://www.w3.org/2000/01/rdf-schema#comment> "Instancia correspondiente a la cocina italiana"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Italian> <http://www.w3.org/2000/01/rdf-schema#label> "Italian" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#January
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#January> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#January> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#January> <http://www.w3.org/2000/01/rdf-schema#comment> "Enero"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#January> <http://www.w3.org/2000/01/rdf-schema#label> "January" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Japanese
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Japanese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Japanese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Japanese> <http://www.w3.org/2000/01/rdf-schema#comment> "Instancia correspondiente a la cocina japonesa"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Japanese> <http://www.w3.org/2000/01/rdf-schema#label> "Japanese" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#July
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#July> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#July> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#July> <http://www.w3.org/2000/01/rdf-schema#comment> "Julio"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#July> <http://www.w3.org/2000/01/rdf-schema#label> "July" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June> <http://www.w3.org/2000/01/rdf-schema#comment> "Junio"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June> <http://www.w3.org/2000/01/rdf-schema#label> "June" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid> <http://purl.org/net/cartCoord#located_in> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MadridPos> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid> <http://www.w3.org/2000/01/rdf-schema#comment> "La ciudad de Madrid"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid> <http://www.w3.org/2000/01/rdf-schema#label> "Madrid" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MadridPos
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MadridPos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MadridPos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/cartCoord#Point> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MadridPos> <http://purl.org/net/cartCoord#xcoord> "-3.7038"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MadridPos> <http://purl.org/net/cartCoord#ycoord> "40.4168"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MadridPos> <http://www.w3.org/2000/01/rdf-schema#comment> "Coordenadas de la ciudad de Madrid"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MadridPos> <http://www.w3.org/2000/01/rdf-schema#label> "MadridPos" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#March
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#March> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#March> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#March> <http://www.w3.org/2000/01/rdf-schema#comment> "Marzo"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#March> <http://www.w3.org/2000/01/rdf-schema#label> "March" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#May
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#May> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#May> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#May> <http://www.w3.org/2000/01/rdf-schema#comment> "Mayo"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#May> <http://www.w3.org/2000/01/rdf-schema#label> "May" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mediterranean
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mediterranean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mediterranean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mediterranean> <http://www.w3.org/2000/01/rdf-schema#comment> "Instancia correspondiente a la cocina mediterránea"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mediterranean> <http://www.w3.org/2000/01/rdf-schema#label> "Mediterranean" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Metro
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Metro> <http://www.w3.org/2000/01/rdf-schema#comment> "Medio de transporte basado en metro"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Metro> <http://www.w3.org/2000/01/rdf-schema#label> "Metro" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MetroMadrid
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MetroMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MetroMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MetroMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Compañía Metro Madrid" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MetroMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "ComMetroMadrid" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mexican
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mexican> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mexican> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mexican> <http://www.w3.org/2000/01/rdf-schema#comment> "Instancia correspondiente a la cocina mejicana"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mexican> <http://www.w3.org/2000/01/rdf-schema#label> "Mexican" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Monument
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Monument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Monument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Monument> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de atracción de carácter monumental o histórico"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Monument> <http://www.w3.org/2000/01/rdf-schema#label> "Monument" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Museum
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Museum> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de atracción relacionada con museos y galerías"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Museum> <http://www.w3.org/2000/01/rdf-schema#label> "Museum" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Musical
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Musical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Musical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Musical> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento de tipo musical"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Musical> <http://www.w3.org/2000/01/rdf-schema#label> "Musical" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#November
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#November> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#November> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#November> <http://www.w3.org/2000/01/rdf-schema#comment> "Noviembre"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#November> <http://www.w3.org/2000/01/rdf-schema#label> "November" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#October
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#October> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#October> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#October> <http://www.w3.org/2000/01/rdf-schema#comment> "Octubre"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#October> <http://www.w3.org/2000/01/rdf-schema#label> "October" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ParqueValencia
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ParqueValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ParqueValencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ParqueValencia> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Valencia> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ParqueValencia> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ParqueValencia> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Museum> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ParqueValencia> <http://www.w3.org/2000/01/rdf-schema#comment> "La atracción de Parque Valencia"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ParqueValencia> <http://www.w3.org/2000/01/rdf-schema#label> "ParqueValencia" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#PublicCycle
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#PublicCycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#PublicCycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#PublicCycle> <http://www.w3.org/2000/01/rdf-schema#comment> "Medio de transporte basado en bicicleta de uso público"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#PublicCycle> <http://www.w3.org/2000/01/rdf-schema#label> "Public Cycle" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score> "3.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7> <http://www.w3.org/2000/01/rdf-schema#comment> "Puntuación de 3.7"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7> <http://www.w3.org/2000/01/rdf-schema#label> "R3.7" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.0
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.0> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score> "4.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.0> <http://www.w3.org/2000/01/rdf-schema#comment> "Puntuación de 4.0"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.0> <http://www.w3.org/2000/01/rdf-schema#label> "R4.0" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.2
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score> "4.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.2> <http://www.w3.org/2000/01/rdf-schema#comment> "Puntuación de 4.2" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.2> <http://www.w3.org/2000/01/rdf-schema#label> "R4.2" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score> "4.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6> <http://www.w3.org/2000/01/rdf-schema#comment> "Puntuación de 4.6" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6> <http://www.w3.org/2000/01/rdf-schema#label> "R4.6" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.7
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.7> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score> "4.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.7> <http://www.w3.org/2000/01/rdf-schema#comment> "Puntuación de 4.7" .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.7> <http://www.w3.org/2000/01/rdf-schema#label> "R4.7" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteFusionBarcelona
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteFusionBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteFusionBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteFusionBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mediterranean> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteFusionBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteFusionBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.2> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteFusionBarcelona> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price> "51"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteFusionBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurante Fusión Barcelona"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteFusionBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "RestauranteFusionBarcelona" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteGourmetMadrid
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteGourmetMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteGourmetMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteGourmetMadrid> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mexican> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteGourmetMadrid> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteGourmetMadrid> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.7> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteGourmetMadrid> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price> "30"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteGourmetMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurante Gourmet Madrid"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteGourmetMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "RestauranteGourmetMadrid" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RuralHotel
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RuralHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RuralHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel de tipo rural"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Rural Hotel" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#September
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#September> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#September> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#September> <http://www.w3.org/2000/01/rdf-schema#comment> "Septiembre"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#September> <http://www.w3.org/2000/01/rdf-schema#label> "September" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Sports
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Sports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Sports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Sports> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento relacionado con los deportes"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Sports> <http://www.w3.org/2000/01/rdf-schema#label> "Sports" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars3
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars3> <http://www.w3.org/2000/01/rdf-schema#comment> "Categoría de hotel de 3 estrellas"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars3> <http://www.w3.org/2000/01/rdf-schema#label> "***" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars4
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars4> <http://www.w3.org/2000/01/rdf-schema#comment> "Categoría de hotel de 4 estrellas"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars4> <http://www.w3.org/2000/01/rdf-schema#label> "****" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Taxi
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Taxi> <http://www.w3.org/2000/01/rdf-schema#comment> "Medio de transporte basado en taxis"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Taxi> <http://www.w3.org/2000/01/rdf-schema#label> "Taxi" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Tech
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Tech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Tech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Tech> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento de tipo tecnológico o científico"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Tech> <http://www.w3.org/2000/01/rdf-schema#label> "Tech" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo> <http://purl.org/net/cartCoord#located_in> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ToledoPos> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo> <http://www.w3.org/2000/01/rdf-schema#comment> "La ciudad de Toledo"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo> <http://www.w3.org/2000/01/rdf-schema#label> "Toledo" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ToledoPos
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ToledoPos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ToledoPos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/cartCoord#Point> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ToledoPos> <http://purl.org/net/cartCoord#xcoord> "-4.0273"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ToledoPos> <http://purl.org/net/cartCoord#ycoord> "39.8628"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ToledoPos> <http://www.w3.org/2000/01/rdf-schema#comment> "Las coordenadas de la ciudad de Toledo"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ToledoPos> <http://www.w3.org/2000/01/rdf-schema#label> "ToledoPos" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TouristicHotel
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TouristicHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TouristicHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TouristicHotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Hotel de entorno turístico"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TouristicHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Touristic Hotel" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Trolley
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Trolley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Trolley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Trolley> <http://www.w3.org/2000/01/rdf-schema#comment> "Medio de transporte basado en tranvía"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Trolley> <http://www.w3.org/2000/01/rdf-schema#label> "Trolley" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#UrbanBarcelona
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#UrbanBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#UrbanBarcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#UrbanBarcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "La empresa de transportes Urban Barcelona"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#UrbanBarcelona> <http://www.w3.org/2000/01/rdf-schema#label> "ComUrbanValencia" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Valencia
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Valencia> <http://purl.org/net/cartCoord#located_in> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ValenciaPos> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Valencia> <http://www.w3.org/2000/01/rdf-schema#comment> "La ciudad de Valencia"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Valencia> <http://www.w3.org/2000/01/rdf-schema#label> "Valencia" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ValenciaPos
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ValenciaPos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ValenciaPos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/cartCoord#Point> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ValenciaPos> <http://purl.org/net/cartCoord#xcoord> "-0.3763"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ValenciaPos> <http://purl.org/net/cartCoord#ycoord> "39.4699"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ValenciaPos> <http://www.w3.org/2000/01/rdf-schema#comment> "Las coordenadas de la ciudad de Valencia"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ValenciaPos> <http://www.w3.org/2000/01/rdf-schema#label> "ValenciaPos" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year2024
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year2024> <http://www.w3.org/2000/01/rdf-schema#comment> "Año 2024"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year2024> <http://www.w3.org/2000/01/rdf-schema#label> "Year2024" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Zaragoza
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Zaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Zaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Zaragoza> <http://purl.org/net/cartCoord#located_in> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ZaragozaPos> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Zaragoza> <http://www.w3.org/2000/01/rdf-schema#comment> "La ciudad de Zaragoza"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Zaragoza> <http://www.w3.org/2000/01/rdf-schema#label> "Zaragoza" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ZaragozaPos
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ZaragozaPos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ZaragozaPos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/cartCoord#Point> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ZaragozaPos> <http://purl.org/net/cartCoord#xcoord> "-0.8891"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ZaragozaPos> <http://purl.org/net/cartCoord#ycoord> "41.6488"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ZaragozaPos> <http://www.w3.org/2000/01/rdf-schema#comment> "Las coordenadas de la ciudad de Zaragoza"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ZaragozaPos> <http://www.w3.org/2000/01/rdf-schema#label> "ZaragozaPos" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day22> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#February> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year2024> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha 22/02/2024"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22> <http://www.w3.org/2000/01/rdf-schema#label> "Date2024-02-22" .
+# 
+# http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day28> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year2024> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha 28/06/2024"@es .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28> <http://www.w3.org/2000/01/rdf-schema#label> "Date2024-06-28" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/net/cartCoord#Point_List> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una lista de puntos geográficos"@es .
+<http://purl.org/net/cartCoord#Point_List> <http://www.w3.org/2000/01/rdf-schema#label> "point_list" .
+# 
+<http://purl.org/net/cartCoord#hasPlacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Establecer una ubicación" .
+# 
+<http://purl.org/net/cartCoord#hasPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Establecer un punto exacto de localización"@es .
+# 
+<http://purl.org/net/cartCoord#zcoord> <http://www.w3.org/2000/01/rdf-schema#comment> "Corresponde a la coordenada Z o cota"@es .
+# 
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que representa un punto geográfico o bien una lista de puntos"@es .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#label> "spatial_thing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid32 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid32 <http://www.w3.org/2000/01/rdf-schema#comment> "Si una ciudad tiene hotel, transporte y restaurante se considera una ciudad práctica." .
+_:genid32 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid32 <http://www.w3.org/2003/11/swrl#body> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c> .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r> .
+_:genid34 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c> .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/t> .
+_:genid36 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c> .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/h> .
+_:genid38 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r> .
+_:genid40 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/t> .
+_:genid42 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/h> .
+_:genid44 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c> .
+_:genid46 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/2003/11/swrl#head> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c> .
+_:genid48 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#practical_city> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid49 <http://www.w3.org/2000/01/rdf-schema#comment> "Considerar un evento de junio como de pre-sesión" .
+_:genid49 <http://www.w3.org/2000/01/rdf-schema#label> "S3" .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid49 <http://www.w3.org/2003/11/swrl#body> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d> .
+_:genid51 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e> .
+_:genid51 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e> .
+_:genid53 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid55 .
+_:genid55 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June> .
+_:genid55 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d> .
+_:genid55 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
+_:genid57 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d> .
+_:genid57 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://www.w3.org/2003/11/swrl#head> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid59 .
+_:genid59 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e> .
+_:genid59 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#pre_season_event> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid60 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid60 <http://www.w3.org/2000/01/rdf-schema#comment> "Restaurantes caros a partir de importe 40" .
+_:genid60 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid60 <http://www.w3.org/2003/11/swrl#body> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2003/11/swrl#arguments> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "40"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/p> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid66 .
+_:genid66 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/p> .
+_:genid66 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r> .
+_:genid66 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r> .
+_:genid68 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid60 <http://www.w3.org/2003/11/swrl#head> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r> .
+_:genid70 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#expensive_restaurant> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

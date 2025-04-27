@@ -1,0 +1,1143 @@
+@prefix : <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#> .
+
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente> rdf:type owl:Ontology ;
+                                                                          owl:imports <http://purl.org/net/cartCoord#> ;
+                                                                          <http://creativecommons.org/ns#license> "https://creativecommons.org/licenses/by/4.0/" ;
+                                                                          <http://purl.org/dc/elements/1.1/creator> "Jorge, Pablo y Arturo" ;
+                                                                          <http://purl.org/dc/elements/1.1/description> "Ontología para describir ciudades, hoteles, transportes y eventos turísticos inteligentes en España" ;
+                                                                          <http://purl.org/dc/elements/1.1/modified> "2025-04-27^^xsd:date" ;
+                                                                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#" ,
+                                                                                                                                "ti" ;
+                                                                          rdfs:label "Turismo Inteligente Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/modified
+<http://purl.org/dc/elements/1.1/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/net/cartCoord#located_in
+<http://purl.org/net/cartCoord#located_in> rdf:type owl:ObjectProperty ,
+                                                    owl:FunctionalProperty ;
+                                           rdfs:domain :City ;
+                                           rdfs:range <http://purl.org/net/cartCoord#Point> ;
+                                           rdfs:comment "Localización geográfica"@es ;
+                                           rdfs:label "located_in_point" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style
+:cooking_style rdf:type owl:ObjectProperty ;
+               rdfs:domain :Restaurant ;
+               rdfs:range :Cuisine ;
+               rdfs:comment "Estilo de cocina de un restaurante"@es ;
+               rdfs:label "cooking_style" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day
+:has_day rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :Date ;
+         rdfs:range :Day ;
+         rdfs:comment "Es el día indicado"@es ;
+         rdfs:label "has_day" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month
+:has_month rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Date ;
+           rdfs:range :Month ;
+           rdfs:comment "Es el mes indicado"@es ;
+           rdfs:label "has_month" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year
+:has_year rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Date ;
+          rdfs:range :Year ;
+          rdfs:comment "Es el año indicado"@es ;
+          rdfs:label "has_year" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized
+:is_categorized rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Hotel ;
+                rdfs:range :HotelCategory ;
+                rdfs:comment "El hotel es de la categoría relacionada."@es ;
+                rdfs:label "has_category" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City
+:located_in_City rdf:type owl:ObjectProperty ;
+                 rdfs:range :City ;
+                 rdfs:comment "La entidad pertenece a la ciudad indicada"@es ;
+                 rdfs:label "located_in_city" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City
+:occurs_in_City rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Attraction ;
+                rdfs:range :City ;
+                rdfs:comment "Indica en qué ciudad tiene lugar un evento"@es ;
+                rdfs:label "occurs_in_city" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date
+:occurs_in_date rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Event ;
+                rdfs:range :Date ;
+                rdfs:comment "Fecha en la que ocurre un evento"@es ;
+                rdfs:label "ocurrs_in_date" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated
+:rated rdf:type owl:ObjectProperty ;
+       rdfs:range :Rating ;
+       rdfs:comment "Propiedad de ser puntuado por un usuario"@es ;
+       rdfs:label "is_rated" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by
+:runned_by rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Transport ;
+           rdfs:range :transport_company ;
+           rdfs:comment "Relaciona el medio de transporte con la empresa operadora"@es ;
+           rdfs:label "runned_by" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction
+:type_of_attraction rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Attraction ;
+                    rdfs:range :AttractionType ;
+                    rdfs:comment "Indica qué tipo de atracción es"@es ;
+                    rdfs:label "is_attraction_type" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event
+:type_of_event rdf:type owl:ObjectProperty ;
+               rdfs:domain :Event ;
+               rdfs:range :EventType ;
+               rdfs:comment "Indica el tipo de evento"@es ;
+               rdfs:label "is_event_type" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel
+:type_of_hotel rdf:type owl:ObjectProperty ;
+               rdfs:domain :Hotel ;
+               rdfs:range :HotelType ;
+               rdfs:comment "Indica o vincula el tipo de establecimiento hotelero"@es ;
+               rdfs:label "is_hotel_type" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation
+:type_of_transportation rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Transport ;
+                        rdfs:range :TransportationMean ;
+                        rdfs:comment "Vincula un transporte real con el medio de transporte que usa"@es ;
+                        rdfs:label "is_transportation_type" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/net/cartCoord#xcoord
+<http://purl.org/net/cartCoord#xcoord> rdfs:comment "Corresponde a la coordenada X o longitud."@es .
+
+
+###  http://purl.org/net/cartCoord#ycoord
+<http://purl.org/net/cartCoord#ycoord> rdfs:comment "Corresponde a la coordenada Y o latitud"@es .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price
+:Price rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:decimal ;
+       rdfs:comment "Indica el valor numérico del precio"@es ;
+       rdfs:label "price" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score
+:Score rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:decimal ;
+       rdfs:comment "Indica el valor de la puntuación otorgada"@es ;
+       rdfs:label "score" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month
+:day_of_month rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Day ;
+              rdfs:range xsd:positiveInteger ;
+              rdfs:comment "Valor numérico del día del mes"@es ;
+              rdfs:label "day_month" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/net/cartCoord#Point
+<http://purl.org/net/cartCoord#Point> rdfs:comment "Representación de un punto geográfico en la forma latitud, longitud"@es ;
+                                      rdfs:label "point" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction
+:Attraction rdf:type owl:Class ;
+            rdfs:comment "Representa una atracción como jardín o playa"@es ;
+            rdfs:label "attraction" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType
+:AttractionType rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:oneOf ( :Beach
+                                                  :Cultural
+                                                  :Garden
+                                                  :Monument
+                                                  :Museum
+                                                )
+                                    ] ;
+                rdfs:comment "Tipo de atracción, como playa o museo"@es ;
+                rdfs:label "attraction_type" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City
+:City rdf:type owl:Class ;
+      rdfs:comment "Representa una ciudad física"@es ;
+      rdfs:label "city" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine
+:Cuisine rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:oneOf ( :Andalusian
+                                           :Italian
+                                           :Japanese
+                                           :Mediterranean
+                                           :Mexican
+                                         )
+                             ] ;
+         rdfs:comment "Representa un estilo de comida, como mejicana o japonesa."@es ;
+         rdfs:label "cuisine" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date
+:Date rdf:type owl:Class ;
+      rdfs:comment "Representa una fecha."@es ;
+      rdfs:label "date" ;
+      rdfs:sameAs "https://www.ontotext.com/proton/protonext.html#Date" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day
+:Day rdf:type owl:Class ;
+     rdfs:comment "Representa un día del mes"@es ;
+     rdfs:label "day" ;
+     rdfs:sameAs "http://www.ontotext.com/proton/protonext#DayOfMonth" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event
+:Event rdf:type owl:Class ;
+       rdfs:comment "Representa un evento o suceso que puede ser de interés turístico"@es ;
+       rdfs:label "event" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType
+:EventType rdf:type owl:Class ;
+           rdfs:comment "Clase que representa un tipo de evento, como musical o tecnológico."@es ;
+           rdfs:label "event_type" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel
+:Hotel rdf:type owl:Class ;
+       rdfs:comment "Representación de un alojamiento para viajeros."@es ;
+       rdfs:label "hotel" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory
+:HotelCategory rdf:type owl:Class ;
+               rdfs:comment "Categoría corriente en estrellas de los alojamientos"@es ;
+               rdfs:label "hotel_category" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType
+:HotelType rdf:type owl:Class ;
+           rdfs:comment "Representa un tipo de hotel: playero, lujoso, rural, etc."@es ;
+           rdfs:label "hotel_type" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month
+:Month rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:oneOf ( :April
+                                         :August
+                                         :December
+                                         :February
+                                         :January
+                                         :July
+                                         :June
+                                         :March
+                                         :May
+                                         :November
+                                         :October
+                                         :September
+                                       )
+                           ] ;
+       rdfs:comment "Representa un mes del año"@es ;
+       rdfs:label "month" ;
+       rdfs:sameAs "http://www.ontotext.com/proton/protonext#Month" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:comment "Representa una puntuación o valoración por parte de un humano"@es ;
+        rdfs:label "rating" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant
+:Restaurant rdf:type owl:Class ;
+            rdfs:comment "Representa un establecimiento de restauración"@es ;
+            rdfs:label "restaurant" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:comment "Representación de un sistema de trasporte directamente utilizable."@es ;
+           rdfs:label "transport" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean
+:TransportationMean rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Class ;
+                                          owl:oneOf ( :Bus
+                                                      :Metro
+                                                      :PublicCycle
+                                                      :Taxi
+                                                      :Trolley
+                                                    )
+                                        ] ;
+                    rdfs:comment "Medio de transporte genérico, como \"tranvía\" o \"taxi\"."@es ;
+                    rdfs:label "transportation_mean" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year
+:Year rdf:type owl:Class ;
+      rdfs:comment "Representa un año del calendario."@es ;
+      rdfs:label "year" ;
+      rdfs:sameAs "http://www.ontotext.com/proton/protonext#CalendarYear" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#expensive_restaurant
+:expensive_restaurant rdf:type owl:Class ;
+                      rdfs:subClassOf :Restaurant ;
+                      rdfs:comment "Restaurante considerado \"caro\"."@es ;
+                      rdfs:label "expensive_restaurant" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#practical_city
+:practical_city rdf:type owl:Class ;
+                rdfs:subClassOf :City ;
+                rdfs:comment "Una especialización de ciudad que se sabe que ofrece al menos un hotel, transporte y restaurante."@es ;
+                rdfs:label "practical_city" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#pre_season_event
+:pre_season_event rdf:type owl:Class ;
+                  rdfs:subClassOf :Event ;
+                  rdfs:comment "Una especialización de evento que comienza justo en Junio."@es ;
+                  rdfs:label "pre_season_event" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company
+:transport_company rdf:type owl:Class ;
+                   rdfs:comment "Empresa de transportes"@es ;
+                   rdfs:label "transport_company" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Andalusian
+:Andalusian rdf:type owl:NamedIndividual ,
+                     :Cuisine ;
+            rdfs:comment "Instancia correspondiente a la cocina andaluza"@es ;
+            rdfs:label "Andalusian" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#April
+:April rdf:type owl:NamedIndividual ,
+                :Month ;
+       rdfs:comment "Abril"@es ;
+       rdfs:label "April" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#August
+:August rdf:type owl:NamedIndividual ,
+                 :Month ;
+        rdfs:comment "Agosto"@es ;
+        rdfs:label "August" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusMadrid
+:AutobusMadrid rdf:type owl:NamedIndividual ,
+                        :Transport ;
+               :located_in_City :Madrid ;
+               :runned_by :MetroMadrid ;
+               :type_of_transportation :Bus ;
+               :Price 4.18 ;
+               rdfs:comment "Sistema de transporte autobuses Madrid"@es ;
+               rdfs:label "AutobusesMadrid" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusesBarcelona
+:AutobusesBarcelona rdf:type owl:NamedIndividual ,
+                             :Transport ;
+                    :located_in_City :Barcelona ;
+                    :runned_by :UrbanBarcelona ;
+                    :type_of_transportation :Bus ;
+                    :Price 3.54 ;
+                    rdfs:comment "Sistema de transporte autobuses de Barcelona"@es ;
+                    rdfs:label "AutobusesBarcelona" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona
+:Barcelona rdf:type owl:NamedIndividual ,
+                    :City ;
+           <http://purl.org/net/cartCoord#located_in> :BarcelonaPos ;
+           rdfs:comment "La ciudad de Barcelona"@es ;
+           rdfs:label "Barcelona" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BarcelonaPos
+:BarcelonaPos rdf:type owl:NamedIndividual ,
+                       <http://purl.org/net/cartCoord#Point> ;
+              <http://purl.org/net/cartCoord#xcoord> "2.1686"^^xsd:double ;
+              <http://purl.org/net/cartCoord#ycoord> "41.3874"^^xsd:double ;
+              rdfs:comment "Coordenadas de la ciudad de Barcelona"@es ;
+              rdfs:label "BarcelonaPos" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Beach
+:Beach rdf:type owl:NamedIndividual ,
+                :AttractionType ;
+       rdfs:comment "Tipo de atracción relacionada con actividades en la playa"@es ;
+       rdfs:label "Beach" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BeachHotel
+:BeachHotel rdf:type owl:NamedIndividual ,
+                     :HotelType ;
+            rdfs:comment "Hotel playero"@es ;
+            rdfs:label "Beach Hotel" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus
+:Bus rdf:type owl:NamedIndividual ,
+              :TransportationMean ;
+     rdfs:comment "Medio de transporte basado en autobús"@es ;
+     rdfs:label "Bus" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BusinessHotel
+:BusinessHotel rdf:type owl:NamedIndividual ,
+                        :HotelType ;
+               rdfs:comment "Hotel de negocios"@es ;
+               rdfs:label "Business Hotel" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CastilloToledo
+:CastilloToledo rdf:type owl:NamedIndividual ,
+                         :Attraction ;
+                :occurs_in_City :Toledo ;
+                :rated :R3.7 ;
+                :type_of_attraction :Monument ;
+                rdfs:comment "Atracción del Castillo de Toledo"@es ;
+                rdfs:label "CastilloToledo" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CatedralMadrid
+:CatedralMadrid rdf:type owl:NamedIndividual ,
+                         :Attraction ;
+                :occurs_in_City :Madrid ;
+                :rated :R4.6 ;
+                :type_of_attraction :Beach ;
+                rdfs:comment "Atracción de la Catedral de Madrid"@es ;
+                rdfs:label "CatedralMadrid" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CongresoBarcelona
+:CongresoBarcelona rdf:type owl:NamedIndividual ,
+                            :Event ;
+                   :occurs_in_City :Barcelona ;
+                   :occurs_in_date <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28> ;
+                   :type_of_event :Gastronomic ;
+                   rdfs:comment "Representación del evento Congreso Gastronómico de Barcelona"@es ;
+                   rdfs:label "CongresoBarcelona" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cultural
+:Cultural rdf:type owl:NamedIndividual ,
+                   :AttractionType ;
+          rdfs:comment "Tipo de atracción relacionada con actividades culturales"@es ;
+          rdfs:label "Cultural" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CulturalEvent
+:CulturalEvent rdf:type owl:NamedIndividual ,
+                        :EventType ;
+               rdfs:comment "Evento de tipo cultural"@es ;
+               rdfs:label "Cultural Event" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day22
+:Day22 rdf:type owl:NamedIndividual ,
+                :Day ;
+       :day_of_month 22 ;
+       rdfs:comment "Día 22 del mes"@es ;
+       rdfs:label "Day22" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day28
+:Day28 rdf:type owl:NamedIndividual ,
+                :Day ;
+       :day_of_month 28 ;
+       rdfs:comment "Día 28 del mes"@es ;
+       rdfs:label "Day28" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#December
+:December rdf:type owl:NamedIndividual ,
+                   :Month ;
+          rdfs:comment "Diciembre"@es ;
+          rdfs:label "December" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#DeluxeHotel
+:DeluxeHotel rdf:type owl:NamedIndividual ,
+                      :HotelType ;
+             rdfs:comment "Hotel lujoso"@es ;
+             rdfs:label "Deluxe Hotel" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#February
+:February rdf:type owl:NamedIndividual ,
+                   :Month ;
+          rdfs:comment "Febrero"@es ;
+          rdfs:label "February" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#FestivalZaragoza
+:FestivalZaragoza rdf:type owl:NamedIndividual ,
+                           :Event ;
+                  :occurs_in_City :Zaragoza ;
+                  :occurs_in_date <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22> ;
+                  :type_of_event :Musical ;
+                  rdfs:comment "Evento Festival de Zaragoza"@es ;
+                  rdfs:label "FestivalZaragoza" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Garden
+:Garden rdf:type owl:NamedIndividual ,
+                 :AttractionType ;
+        rdfs:comment "Tipo de atracción relacionada con jardines y parques"@es ;
+        rdfs:label "Garden" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Gastronomic
+:Gastronomic rdf:type owl:NamedIndividual ,
+                      :EventType ;
+             rdfs:comment "Evento de tipo gastronómico"@es ;
+             rdfs:label "Gastronomic" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona
+:HotelRoyalBarcelona rdf:type owl:NamedIndividual ,
+                              :Hotel ;
+                     :is_categorized :Stars4 ;
+                     :located_in_City :Barcelona ;
+                     :rated :R4.0 ;
+                     :type_of_hotel :BeachHotel ;
+                     :Price 252 ;
+                     rdfs:comment "Hotel Royal de Barcelona"@es ;
+                     rdfs:label "HotelRoyalBarcelona" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo
+:HotelVistaToledo rdf:type owl:NamedIndividual ,
+                           :Hotel ;
+                  :is_categorized :Stars3 ;
+                  :located_in_City :Toledo ;
+                  :rated :R4.6 ;
+                  :type_of_hotel :TouristicHotel ;
+                  :Price 99 ;
+                  rdfs:comment "Hotel Vista Toledo"@es ;
+                  rdfs:label "HotelVistaToledo" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Italian
+:Italian rdf:type owl:NamedIndividual ,
+                  :Cuisine ;
+         rdfs:comment "Instancia correspondiente a la cocina italiana"@es ;
+         rdfs:label "Italian" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#January
+:January rdf:type owl:NamedIndividual ,
+                  :Month ;
+         rdfs:comment "Enero"@es ;
+         rdfs:label "January" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Japanese
+:Japanese rdf:type owl:NamedIndividual ,
+                   :Cuisine ;
+          rdfs:comment "Instancia correspondiente a la cocina japonesa"@es ;
+          rdfs:label "Japanese" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#July
+:July rdf:type owl:NamedIndividual ,
+               :Month ;
+      rdfs:comment "Julio"@es ;
+      rdfs:label "July" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June
+:June rdf:type owl:NamedIndividual ,
+               :Month ;
+      rdfs:comment "Junio"@es ;
+      rdfs:label "June" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid
+:Madrid rdf:type owl:NamedIndividual ,
+                 :City ;
+        <http://purl.org/net/cartCoord#located_in> :MadridPos ;
+        rdfs:comment "La ciudad de Madrid"@es ;
+        rdfs:label "Madrid" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MadridPos
+:MadridPos rdf:type owl:NamedIndividual ,
+                    <http://purl.org/net/cartCoord#Point> ;
+           <http://purl.org/net/cartCoord#xcoord> "-3.7038"^^xsd:double ;
+           <http://purl.org/net/cartCoord#ycoord> "40.4168"^^xsd:double ;
+           rdfs:comment "Coordenadas de la ciudad de Madrid"@es ;
+           rdfs:label "MadridPos" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#March
+:March rdf:type owl:NamedIndividual ,
+                :Month ;
+       rdfs:comment "Marzo"@es ;
+       rdfs:label "March" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#May
+:May rdf:type owl:NamedIndividual ,
+              :Month ;
+     rdfs:comment "Mayo"@es ;
+     rdfs:label "May" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mediterranean
+:Mediterranean rdf:type owl:NamedIndividual ,
+                        :Cuisine ;
+               rdfs:comment "Instancia correspondiente a la cocina mediterránea"@es ;
+               rdfs:label "Mediterranean" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Metro
+:Metro rdf:type owl:NamedIndividual ,
+                :TransportationMean ;
+       rdfs:comment "Medio de transporte basado en metro"@es ;
+       rdfs:label "Metro" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MetroMadrid
+:MetroMadrid rdf:type owl:NamedIndividual ,
+                      :transport_company ;
+             rdfs:comment "Compañía Metro Madrid" ;
+             rdfs:label "ComMetroMadrid" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mexican
+:Mexican rdf:type owl:NamedIndividual ,
+                  :Cuisine ;
+         rdfs:comment "Instancia correspondiente a la cocina mejicana"@es ;
+         rdfs:label "Mexican" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Monument
+:Monument rdf:type owl:NamedIndividual ,
+                   :AttractionType ;
+          rdfs:comment "Tipo de atracción de carácter monumental o histórico"@es ;
+          rdfs:label "Monument" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Museum
+:Museum rdf:type owl:NamedIndividual ,
+                 :AttractionType ;
+        rdfs:comment "Tipo de atracción relacionada con museos y galerías"@es ;
+        rdfs:label "Museum" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Musical
+:Musical rdf:type owl:NamedIndividual ,
+                  :EventType ;
+         rdfs:comment "Evento de tipo musical"@es ;
+         rdfs:label "Musical" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#November
+:November rdf:type owl:NamedIndividual ,
+                   :Month ;
+          rdfs:comment "Noviembre"@es ;
+          rdfs:label "November" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#October
+:October rdf:type owl:NamedIndividual ,
+                  :Month ;
+         rdfs:comment "Octubre"@es ;
+         rdfs:label "October" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ParqueValencia
+:ParqueValencia rdf:type owl:NamedIndividual ,
+                         :Attraction ;
+                :occurs_in_City :Valencia ;
+                :rated :R3.7 ;
+                :type_of_attraction :Museum ;
+                rdfs:comment "La atracción de Parque Valencia"@es ;
+                rdfs:label "ParqueValencia" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#PublicCycle
+:PublicCycle rdf:type owl:NamedIndividual ,
+                      :TransportationMean ;
+             rdfs:comment "Medio de transporte basado en bicicleta de uso público"@es ;
+             rdfs:label "Public Cycle" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7
+:R3.7 rdf:type owl:NamedIndividual ,
+               :Rating ;
+      :Score 3.7 ;
+      rdfs:comment "Puntuación de 3.7"@es ;
+      rdfs:label "R3.7" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.0
+:R4.0 rdf:type owl:NamedIndividual ,
+               :Rating ;
+      :Score 4.0 ;
+      rdfs:comment "Puntuación de 4.0"@es ;
+      rdfs:label "R4.0" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.2
+:R4.2 rdf:type owl:NamedIndividual ,
+               :Rating ;
+      :Score 4.2 ;
+      rdfs:comment "Puntuación de 4.2" ;
+      rdfs:label "R4.2" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6
+:R4.6 rdf:type owl:NamedIndividual ,
+               :Rating ;
+      :Score 4.6 ;
+      rdfs:comment "Puntuación de 4.6" ;
+      rdfs:label "R4.6" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.7
+:R4.7 rdf:type owl:NamedIndividual ,
+               :Rating ;
+      :Score 4.7 ;
+      rdfs:comment "Puntuación de 4.7" ;
+      rdfs:label "R4.7" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteFusionBarcelona
+:RestauranteFusionBarcelona rdf:type owl:NamedIndividual ,
+                                     :Restaurant ;
+                            :cooking_style :Mediterranean ;
+                            :located_in_City :Barcelona ;
+                            :rated :R4.2 ;
+                            :Price 51 ;
+                            rdfs:comment "Restaurante Fusión Barcelona"@es ;
+                            rdfs:label "RestauranteFusionBarcelona" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteGourmetMadrid
+:RestauranteGourmetMadrid rdf:type owl:NamedIndividual ,
+                                   :Restaurant ;
+                          :cooking_style :Mexican ;
+                          :located_in_City :Madrid ;
+                          :rated :R4.7 ;
+                          :Price 30 ;
+                          rdfs:comment "Restaurante Gourmet Madrid"@es ;
+                          rdfs:label "RestauranteGourmetMadrid" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RuralHotel
+:RuralHotel rdf:type owl:NamedIndividual ,
+                     :HotelType ;
+            rdfs:comment "Hotel de tipo rural"@es ;
+            rdfs:label "Rural Hotel" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#September
+:September rdf:type owl:NamedIndividual ,
+                    :Month ;
+           rdfs:comment "Septiembre"@es ;
+           rdfs:label "September" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Sports
+:Sports rdf:type owl:NamedIndividual ,
+                 :EventType ;
+        rdfs:comment "Evento relacionado con los deportes"@es ;
+        rdfs:label "Sports" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars3
+:Stars3 rdf:type owl:NamedIndividual ,
+                 :HotelCategory ;
+        rdfs:comment "Categoría de hotel de 3 estrellas"@es ;
+        rdfs:label "***" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars4
+:Stars4 rdf:type owl:NamedIndividual ,
+                 :HotelCategory ;
+        rdfs:comment "Categoría de hotel de 4 estrellas"@es ;
+        rdfs:label "****" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Taxi
+:Taxi rdf:type owl:NamedIndividual ,
+               :TransportationMean ;
+      rdfs:comment "Medio de transporte basado en taxis"@es ;
+      rdfs:label "Taxi" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Tech
+:Tech rdf:type owl:NamedIndividual ,
+               :EventType ;
+      rdfs:comment "Evento de tipo tecnológico o científico"@es ;
+      rdfs:label "Tech" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo
+:Toledo rdf:type owl:NamedIndividual ,
+                 :City ;
+        <http://purl.org/net/cartCoord#located_in> :ToledoPos ;
+        rdfs:comment "La ciudad de Toledo"@es ;
+        rdfs:label "Toledo" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ToledoPos
+:ToledoPos rdf:type owl:NamedIndividual ,
+                    <http://purl.org/net/cartCoord#Point> ;
+           <http://purl.org/net/cartCoord#xcoord> "-4.0273"^^xsd:double ;
+           <http://purl.org/net/cartCoord#ycoord> "39.8628"^^xsd:double ;
+           rdfs:comment "Las coordenadas de la ciudad de Toledo"@es ;
+           rdfs:label "ToledoPos" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TouristicHotel
+:TouristicHotel rdf:type owl:NamedIndividual ,
+                         :HotelType ;
+                rdfs:comment "Hotel de entorno turístico"@es ;
+                rdfs:label "Touristic Hotel" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Trolley
+:Trolley rdf:type owl:NamedIndividual ,
+                  :TransportationMean ;
+         rdfs:comment "Medio de transporte basado en tranvía"@es ;
+         rdfs:label "Trolley" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#UrbanBarcelona
+:UrbanBarcelona rdf:type owl:NamedIndividual ,
+                         :transport_company ;
+                rdfs:comment "La empresa de transportes Urban Barcelona"@es ;
+                rdfs:label "ComUrbanValencia" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Valencia
+:Valencia rdf:type owl:NamedIndividual ,
+                   :City ;
+          <http://purl.org/net/cartCoord#located_in> :ValenciaPos ;
+          rdfs:comment "La ciudad de Valencia"@es ;
+          rdfs:label "Valencia" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ValenciaPos
+:ValenciaPos rdf:type owl:NamedIndividual ,
+                      <http://purl.org/net/cartCoord#Point> ;
+             <http://purl.org/net/cartCoord#xcoord> "-0.3763"^^xsd:double ;
+             <http://purl.org/net/cartCoord#ycoord> "39.4699"^^xsd:double ;
+             rdfs:comment "Las coordenadas de la ciudad de Valencia"@es ;
+             rdfs:label "ValenciaPos" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year2024
+:Year2024 rdf:type owl:NamedIndividual ,
+                   :Year ;
+          rdfs:comment "Año 2024"@es ;
+          rdfs:label "Year2024" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Zaragoza
+:Zaragoza rdf:type owl:NamedIndividual ,
+                   :City ;
+          <http://purl.org/net/cartCoord#located_in> :ZaragozaPos ;
+          rdfs:comment "La ciudad de Zaragoza"@es ;
+          rdfs:label "Zaragoza" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ZaragozaPos
+:ZaragozaPos rdf:type owl:NamedIndividual ,
+                      <http://purl.org/net/cartCoord#Point> ;
+             <http://purl.org/net/cartCoord#xcoord> "-0.8891"^^xsd:double ;
+             <http://purl.org/net/cartCoord#ycoord> "41.6488"^^xsd:double ;
+             rdfs:comment "Las coordenadas de la ciudad de Zaragoza"@es ;
+             rdfs:label "ZaragozaPos" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22> rdf:type owl:NamedIndividual ,
+                                                                                             :Date ;
+                                                                                    :has_day :Day22 ;
+                                                                                    :has_month :February ;
+                                                                                    :has_year :Year2024 ;
+                                                                                    rdfs:comment "Fecha 22/02/2024"@es ;
+                                                                                    rdfs:label "Date2024-02-22" .
+
+
+###  http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28> rdf:type owl:NamedIndividual ,
+                                                                                             :Date ;
+                                                                                    :has_day :Day28 ;
+                                                                                    :has_month :June ;
+                                                                                    :has_year :Year2024 ;
+                                                                                    rdfs:comment "Fecha 28/06/2024"@es ;
+                                                                                    rdfs:label "Date2024-06-28" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/net/cartCoord#Point_List> rdfs:comment "Representa una lista de puntos geográficos"@es ;
+                                           rdfs:label "point_list" .
+
+
+<http://purl.org/net/cartCoord#hasPlacement> rdfs:comment "Establecer una ubicación" .
+
+
+<http://purl.org/net/cartCoord#hasPoint> rdfs:comment "Establecer un punto exacto de localización"@es .
+
+
+<http://purl.org/net/cartCoord#zcoord> rdfs:comment "Corresponde a la coordenada Z o cota"@es .
+
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> rdfs:comment "Clase que representa un punto geográfico o bien una lista de puntos"@es ;
+                                                       rdfs:label "spatial_thing" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/h> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/t> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Si una ciudad tiene hotel, transporte y restaurante se considera una ciudad práctica." ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :City ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/h>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Transport ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/t>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :Restaurant ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :located_in_City ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/h> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c>
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :located_in_City ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/t> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c>
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> :located_in_City ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c>
+                                                                                                                       ] ;
+                                                                                                             rdf:rest rdf:nil
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :practical_city ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Considerar un evento de junio como de pre-sesión" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Date ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_month ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :June
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Event ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :occurs_in_date ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d>
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :pre_season_event ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Restaurantes caros a partir de importe 40" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Restaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :Price ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/p>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/p> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 40 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :expensive_restaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

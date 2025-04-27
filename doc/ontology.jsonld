@@ -1,0 +1,2148 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Beach"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cultural"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Garden"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Monument"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Museum"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#April"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#August"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#December"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#February"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#January"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#July"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#March"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#May"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#November"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#October"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#September"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Metro"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#PublicCycle"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Taxi"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Trolley"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Si una ciudad tiene hotel, transporte y restaurante se considera una ciudad práctica."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid46"
+    }, {
+      "@id" : "_:genid44"
+    }, {
+      "@id" : "_:genid42"
+    }, {
+      "@id" : "_:genid40"
+    }, {
+      "@id" : "_:genid38"
+    }, {
+      "@id" : "_:genid36"
+    }, {
+      "@id" : "_:genid34"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid48"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#practical_city"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Considerar un evento de junio como de pre-sesión"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S3"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid57"
+    }, {
+      "@id" : "_:genid55"
+    }, {
+      "@id" : "_:genid53"
+    }, {
+      "@id" : "_:genid51"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid59"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#pre_season_event"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurantes caros a partir de importe 40"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S2"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid68"
+    }, {
+      "@id" : "_:genid66"
+    }, {
+      "@id" : "_:genid62"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid70"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/p"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "40"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Andalusian"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Italian"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Japanese"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mediterranean"
+    }, {
+      "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mexican"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#expensive_restaurant"
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/net/cartCoord#Point",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representación de un punto geográfico en la forma latitud, longitud"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "point"
+  } ]
+}, {
+  "@id" : "http://purl.org/net/cartCoord#Point_List",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa una lista de puntos geográficos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "point_list"
+  } ]
+}, {
+  "@id" : "http://purl.org/net/cartCoord#hasPlacement",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Establecer una ubicación"
+  } ]
+}, {
+  "@id" : "http://purl.org/net/cartCoord#hasPoint",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Establecer un punto exacto de localización"
+  } ]
+}, {
+  "@id" : "http://purl.org/net/cartCoord#located_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Localización geográfica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "located_in_point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/net/cartCoord#Point"
+  } ]
+}, {
+  "@id" : "http://purl.org/net/cartCoord#xcoord",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corresponde a la coordenada X o longitud."
+  } ]
+}, {
+  "@id" : "http://purl.org/net/cartCoord#ycoord",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corresponde a la coordenada Y o latitud"
+  } ]
+}, {
+  "@id" : "http://purl.org/net/cartCoord#zcoord",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Corresponde a la coordenada Z o cota"
+  } ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Jorge, Pablo y Arturo"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Ontología para describir ciudades, hoteles, transportes y eventos turísticos inteligentes en España"
+  } ],
+  "http://purl.org/dc/elements/1.1/modified" : [ {
+    "@value" : "2025-04-27^^xsd:date"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#"
+  }, {
+    "@value" : "ti"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Turismo Inteligente Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.org/net/cartCoord#"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day22"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#February"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year2024"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Fecha 22/02/2024"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Date2024-02-22"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day28"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year2024"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Fecha 28/06/2024"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Date2024-06-28"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Andalusian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Instancia correspondiente a la cocina andaluza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Andalusian"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#April",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Abril"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "April"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa una atracción como jardín o playa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "attraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de atracción, como playa o museo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "attraction_type"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#August",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Agosto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "August"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.18"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MetroMadrid"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Sistema de transporte autobuses Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AutobusesMadrid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AutobusesBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.54"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#UrbanBarcelona"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Sistema de transporte autobuses de Barcelona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AutobusesBarcelona"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/net/cartCoord#located_in" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BarcelonaPos"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La ciudad de Barcelona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Barcelona"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BarcelonaPos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/net/cartCoord#xcoord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "2.1686"
+  } ],
+  "http://purl.org/net/cartCoord#ycoord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "41.3874"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/net/cartCoord#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Coordenadas de la ciudad de Barcelona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BarcelonaPos"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Beach",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de atracción relacionada con actividades en la playa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Beach"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BeachHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Hotel playero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Beach Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Bus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Medio de transporte basado en autobús"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bus"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BusinessHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Hotel de negocios"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CastilloToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Monument"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Atracción del Castillo de Toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CastilloToledo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CatedralMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Beach"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Atracción de la Catedral de Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CatedralMadrid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa una ciudad física"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "city"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CongresoBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-06-28"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Gastronomic"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representación del evento Congreso Gastronómico de Barcelona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CongresoBarcelona"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa un estilo de comida, como mejicana o japonesa."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cuisine"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cultural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de atracción relacionada con actividades culturales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cultural"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#CulturalEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Evento de tipo cultural"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cultural Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa una fecha."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://www.ontotext.com/proton/protonext.html#Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa un día del mes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "day"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "http://www.ontotext.com/proton/protonext#DayOfMonth"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "22"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Día 22 del mes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Day22"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "28"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Día 28 del mes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Day28"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#December",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Diciembre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "December"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#DeluxeHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Hotel lujoso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Deluxe Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa un evento o suceso que puede ser de interés turístico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Clase que representa un tipo de evento, como musical o tecnológico."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "event_type"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#February",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Febrero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "February"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#FestivalZaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Zaragoza"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#2024-02-22"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Musical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Evento Festival de Zaragoza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FestivalZaragoza"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Garden",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de atracción relacionada con jardines y parques"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Garden"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Gastronomic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Evento de tipo gastronómico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gastronomic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representación de un alojamiento para viajeros."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Categoría corriente en estrellas de los alojamientos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hotel_category"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelRoyalBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "252"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars4"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.0"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#BeachHotel"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Hotel Royal de Barcelona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HotelRoyalBarcelona"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa un tipo de hotel: playero, lujoso, rural, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hotel_type"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelVistaToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "99"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars3"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TouristicHotel"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Hotel Vista Toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HotelVistaToledo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Italian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Instancia correspondiente a la cocina italiana"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Italian"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#January",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "January"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Japanese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Instancia correspondiente a la cocina japonesa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Japanese"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#July",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Julio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "July"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#June",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Junio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "June"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/net/cartCoord#located_in" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MadridPos"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La ciudad de Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Madrid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MadridPos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/net/cartCoord#xcoord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "-3.7038"
+  } ],
+  "http://purl.org/net/cartCoord#ycoord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "40.4168"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/net/cartCoord#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Coordenadas de la ciudad de Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MadridPos"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#March",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Marzo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "March"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#May",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Mayo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "May"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mediterranean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Instancia correspondiente a la cocina mediterránea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mediterranean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Metro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Medio de transporte basado en metro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#MetroMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Compañía Metro Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ComMetroMadrid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mexican",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Instancia correspondiente a la cocina mejicana"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mexican"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa un mes del año"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "http://www.ontotext.com/proton/protonext#Month"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Monument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de atracción de carácter monumental o histórico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Monument"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Museum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de atracción relacionada con museos y galerías"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museum"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Musical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Evento de tipo musical"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Musical"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#November",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Noviembre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "November"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#October",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Octubre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "October"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ParqueValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Valencia"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Museum"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La atracción de Parque Valencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ParqueValencia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el valor numérico del precio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#PublicCycle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Medio de transporte basado en bicicleta de uso público"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Public Cycle"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R3.7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.7"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Puntuación de 3.7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "R3.7"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.0"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Puntuación de 4.0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "R4.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Puntuación de 4.2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "R4.2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.6"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Puntuación de 4.6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "R4.6"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4.7"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Puntuación de 4.7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "R4.7"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa una puntuación o valoración por parte de un humano"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa un establecimiento de restauración"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "restaurant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteFusionBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "51"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mediterranean"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Barcelona"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Restaurante Fusión Barcelona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RestauranteFusionBarcelona"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RestauranteGourmetMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Price" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "30"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Mexican"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Madrid"
+  } ],
+  "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#R4.7"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Restaurante Gourmet Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RestauranteGourmetMadrid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#RuralHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Hotel de tipo rural"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rural Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Score",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el valor de la puntuación otorgada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "score"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#September",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Septiembre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "September"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Sports",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Evento relacionado con los deportes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sports"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Categoría de hotel de 3 estrellas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "***"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Stars4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Categoría de hotel de 4 estrellas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "****"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Taxi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Medio de transporte basado en taxis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Taxi"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Tech",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Evento de tipo tecnológico o científico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tech"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Toledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/net/cartCoord#located_in" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ToledoPos"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La ciudad de Toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Toledo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ToledoPos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/net/cartCoord#xcoord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "-4.0273"
+  } ],
+  "http://purl.org/net/cartCoord#ycoord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "39.8628"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/net/cartCoord#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Las coordenadas de la ciudad de Toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ToledoPos"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TouristicHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Hotel de entorno turístico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Touristic Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representación de un sistema de trasporte directamente utilizable."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "transport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Medio de transporte genérico, como \"tranvía\" o \"taxi\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "transportation_mean"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Trolley",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Medio de transporte basado en tranvía"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trolley"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#UrbanBarcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La empresa de transportes Urban Barcelona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ComUrbanValencia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Valencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/net/cartCoord#located_in" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ValenciaPos"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La ciudad de Valencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Valencia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ValenciaPos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/net/cartCoord#xcoord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "-0.3763"
+  } ],
+  "http://purl.org/net/cartCoord#ycoord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "39.4699"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/net/cartCoord#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Las coordenadas de la ciudad de Valencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ValenciaPos"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa un año del calendario."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "http://www.ontotext.com/proton/protonext#CalendarYear"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year2024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Año 2024"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Year2024"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Zaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/net/cartCoord#located_in" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ZaragozaPos"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La ciudad de Zaragoza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Zaragoza"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#ZaragozaPos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/net/cartCoord#xcoord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "-0.8891"
+  } ],
+  "http://purl.org/net/cartCoord#ycoord" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "41.6488"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/net/cartCoord#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Las coordenadas de la ciudad de Zaragoza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ZaragozaPos"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#cooking_style",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Estilo de cocina de un restaurante"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cooking_style"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Cuisine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#day_of_month",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Valor numérico del día del mes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "day_month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#expensive_restaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Restaurante considerado \"caro\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "expensive_restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Restaurant"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_day",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Es el día indicado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_day"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Day"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_month",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Es el mes indicado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Month"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#has_year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Es el año indicado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Year"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#is_categorized",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "El hotel es de la categoría relacionada."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelCategory"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#located_in_City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La entidad pertenece a la ciudad indicada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "located_in_city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica en qué ciudad tiene lugar un evento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "occurs_in_city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#occurs_in_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Fecha en la que ocurre un evento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ocurrs_in_date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#practical_city",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Una especialización de ciudad que se sabe que ofrece al menos un hotel, transporte y restaurante."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "practical_city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#pre_season_event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Una especialización de evento que comienza justo en Junio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "pre_season_event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#rated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Propiedad de ser puntuado por un usuario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is_rated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#runned_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona el medio de transporte con la empresa operadora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "runned_by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#transport_company",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Empresa de transportes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "transport_company"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_attraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica qué tipo de atracción es"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is_attraction_type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#AttractionType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el tipo de evento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is_event_type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#EventType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_hotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica o vincula el tipo de establecimiento hotelero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is_hotel_type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#HotelType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#type_of_transportation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Vincula un transporte real con el medio de transporte que usa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is_transportation_type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente#TransportationMean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/d",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/e",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/h",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jorge/ontologies/2025/3/turismo-inteligente/t",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Clase que representa un punto geográfico o bien una lista de puntos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "spatial_thing"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+} ]
