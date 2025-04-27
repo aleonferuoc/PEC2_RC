@@ -2314,6 +2314,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#expensive_restaurant</IRI>
+        <Literal xml:lang="es">Restaurante considerado &quot;caro&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#expensive_restaurant</IRI>
+        <Literal>expensive_restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#has_day</IRI>
         <Literal xml:lang="es">Es el día indicado</Literal>
     </AnnotationAssertion>
@@ -2381,6 +2391,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#occurs_in_date</IRI>
         <Literal>ocurrs_in_date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#practical_city</IRI>
+        <Literal xml:lang="es">Una especialización de ciudad que se sabe que ofrece al menos un hotel, transporte y restaurante.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#practical_city</IRI>
+        <Literal>practical_city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pre_season_event</IRI>
+        <Literal xml:lang="es">Una especialización de evento que comienza justo en Junio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pre_season_event</IRI>
+        <Literal>pre_season_event</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
